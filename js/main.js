@@ -148,11 +148,13 @@
 }());
 
 function openModal(){
-	var element = document.getElementById("fh5co-modal");
-	element.classList.add("modalopen");
+	$('body').toggleClass('closed-menu')
+}
+
+function shrinkMenu(){
+	$('body').toggleClass('shrink-menu')
 }
 
 function closeModal(){
-	var element = document.getElementById("fh5co-modal");
-	element.classList.remove("modalopen");
+	$('body').removeClass('home')
 }
