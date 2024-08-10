@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 117.5" style="enable-background:new 0 0 200 117.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<radialGradient id="SVGID_1_" cx="-60.0447" cy="-18.4495" r="815.6408" gradientTransform="matrix(0.454 0 0 0.454 55.0187 106.0482)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#41FDFD"/>
+	<stop  offset="5.641615e-02" style="stop-color:#48EAF3"/>
+	<stop  offset="0.245" style="stop-color:#5EAFD4"/>
+	<stop  offset="0.427" style="stop-color:#707FBB"/>
+	<stop  offset="0.598" style="stop-color:#7E59A7"/>
+	<stop  offset="0.7554" style="stop-color:#893D99"/>
+	<stop  offset="0.8943" style="stop-color:#8F2D90"/>
+	<stop  offset="1" style="stop-color:#91278D"/>
+</radialGradient>
+<path class="st0" d="M110.5,103.3c39.7-9.6,68.6-10,89.4-6.6V0H0.9C1.6,13.6,10.2,127.6,110.5,103.3z"/>
+</svg>

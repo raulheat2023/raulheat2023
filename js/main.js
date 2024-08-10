@@ -151,10 +151,41 @@ function openModal(){
 	$('body').toggleClass('closed-menu')
 }
 
+function closeModal(){
+	$('body').removeClass('home')
+}
+
 function shrinkMenu(){
 	$('body').toggleClass('shrink-menu')
 }
 
-function closeModal(){
-	$('body').removeClass('home')
-}
+var header = document.getElementById("mainMenu");
+var btns = header.getElementsByClassName("option");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+	var current = document.getElementsByClassName("active");
+	current[0].className = current[0].className.replace(" active", "");
+	this.className += " active";
+	});
+  }
+
+  const carouselItems = document.querySelectorAll(".carousel_item"); 
+  let e = 1;
+  
+  setInterval(() => {
+  // Accessing All the carousel Items
+   Array.from(carouselItems).forEach((item,index) => {
+  
+	 if(e < carouselItems.length){
+	  item.style.transform = `translateX(-${e*100}%)`
+	 }
+	})
+  
+  
+	if(e < carouselItems.length){
+	  e++;
+	}
+	else{
+	  e=0;
+	}
+  },2000)
