@@ -8,6 +8,7 @@ const lightbox = document.querySelector('.lightbox');
 const lightboxImg = document.querySelector('.lightbox_img');
 const lightboxCloseBtn = document.querySelector('.lightbox_close');
 const lightboxCaption = document.querySelector('.lightbox_caption');
+const lightboxData = document.querySelector('.lightbox_data');
 
 
 /*===== 01) Gallery Filtering functionality =====*/
@@ -47,10 +48,12 @@ galleryImgs.forEach((currImg) => {
 
         let imgSrc = e.target.getAttribute('src');
         let imgCapt = e.target.getAttribute('alt');
+        let imgData = e.target.getAttribute('image-data');
 
         lightboxImg.setAttribute('src', imgSrc);
 
         lightboxCaption.innerHTML = (imgCapt);
+        lightboxData.innerHTML = (imgData);
 
         lightbox.classList.add('open');
         body.classList.add('overflow_hide');

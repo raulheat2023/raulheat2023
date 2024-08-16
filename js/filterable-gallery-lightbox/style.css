@@ -103,11 +103,6 @@ ul {
 }
 
 .gallery_item {
-    border-radius: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    max-width: 100px;
-    max-height: 100px;
 }
 
 /* when the gallery_item has 'show' class */
@@ -135,7 +130,7 @@ ul {
 }
 
 .gallery_item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 /* Lightbox */
@@ -177,8 +172,10 @@ ul {
 }
 
 .lightbox_content {
-    max-width: 700px;
-    width: 100%;
+    display: flex;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
     text-align: center;
     overflow: hidden;
     transform: scale(0);
@@ -188,6 +185,11 @@ ul {
 .lightbox_content img{
     box-shadow: var(--box-shadow);
     border-radius: 10px;
+    max-width: 640px;
+}
+
+.lightbox_content .data-container{
+    width: 300px;
 }
 
 /* when Lightbox is open then lightbox-content will... */

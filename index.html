@@ -46,38 +46,51 @@
 			font-size: 1.5rem;
 			font-weight: 300;
 		}
-		.grid {
-  background: #EEE;
-  max-width: 1200px;
-}
 
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+		/* clearfix */
+		.grid:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 
-/* ---- grid-item ---- */
+		/* ---- grid-item ---- */
 
-.grid-item {
-  width: 160px;
-  height: 120px;
-  float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-}
+		.gallery-grip img {
+			max-width: 100%;
+			display: block;
+		}
 
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
+		.gallery-grip figure {
+			margin: 0;
+			display: grid;
+			grid-template-rows: 1fr auto;
+			margin-bottom: 10px;
+			break-inside: avoid;
+		}
 
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+		.gallery-grip figure>img {
+			grid-row: 1 / -1;
+			grid-column: 1;
+		}
 
+		.gallery-grip figure a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.gallery-grip figcaption {
+			grid-row: 2;
+			grid-column: 1;
+			background-color: rgba(255, 255, 255, .5);
+			padding: .2em .5em;
+			justify-self: start;
+		}
+
+		.gallery-grip .grip-container {
+			column-count: 5;
+			column-gap: 5px;
+		}
 	</style>
 
 	<link rel="stylesheet" href="js/filterable-gallery-lightbox/style.css">
@@ -129,25 +142,18 @@
 						<a href="#fh5co-header" class="shrinkoption"><i class="icon-home"></i></a>
 					</li>
 					<li class="option">
-						<a href="#fh5co-resume" class="expandedoption">
+						<a href="#portfolioWorks" class="expandedoption">
 							<i class="icon-briefcase2"></i>
 							<span>Trabajos</span>
 						</a>
-						<a href="#fh5co-resume" class="shrinkoption"><i class="icon-briefcase2"></i></a>
+						<a href="#portfolioWorks" class="shrinkoption"><i class="icon-briefcase2"></i></a>
 					</li>
 					<li class="option">
-						<a href="#fh5co-resume" class="expandedoption">
+						<a href="#portfolioprojects" class="expandedoption">
 							<i class="icon-mug"></i>
 							<span>Proyectos</span>
 						</a>
 						<a href="#fh5co-resume" class="shrinkoption"><i class="icon-mug"></i></a>
-					</li>
-					<li class="option">
-						<a href="#fh5co-resume" class="expandedoption">
-							<i class="icon-user"></i>
-							<span>Acerca de mí</span>
-						</a>
-						<a href="#fh5co-resume" class="shrinkoption"><i class="icon-user"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -164,11 +170,102 @@
 
 	<div id="page">
 		<section id="fh5co-header" class="bg-border bg-exceed">
+			<button id="aboutButton" class="welcome-button" onclick=aboutWindow()>
+				<div class="icon-container">
+					<i class="icon-magic-wand"></i>
+					<i class="icon-cross2" style="font-size: 44px;"></i>
+				</div>
+			</button>
+			<div id="aboutWindow" class="about-transformation">
+				<div class="about-inner">
+					<div class="bg-top">
+						<div class="tools">
+							<div class="tool">
+								<img src="images/icon-photoshop.webp" alt="photoshop">
+							</div>
+							<div class="tool">
+								<img src="images/icon-illustrator.webp" alt="illustrator">
+							</div>
+							<div class="tool">
+								<img src="images/icon-aftereffects.webp" alt="aftereffects">
+							</div>
+							<div class="tool">
+								<img src="images/icon-adobexd.webp" alt="adobexd">
+							</div>
+							<div class="tool">
+								<img src="images/icon-figma.webp" alt="figma">
+							</div>
+							<div class="tool">
+								<img src="images/icon-html5.webp" alt="html">
+							</div>
+							<div class="tool">
+								<img src="images/icon-css3.webp" alt="ccs">
+							</div>
+							<div class="tool">
+								<img src="images/icon-js.webp" alt="js">
+							</div>
+							<div class="tool">
+								<img src="images/icon-pug.webp" alt="pug">
+							</div>
+							<div class="tool">
+								<img src="images/icon-sass.webp" alt="sass">
+							</div>
+							<div class="tool">
+								<img src="images/icon-angular.webp" alt="angular">
+							</div>
+							<div class="tool">
+								<img src="images/icon-react.webp" alt="react">
+							</div>
+							<div class="tool">
+								<img src="images/icon-medibang.webp" alt="medibang">
+							</div>
+						</div>
+						<div class="qr"></div>
+						<div class="about-text">
+							<div class="cliptextcontainer">
+								<div class="cliptext">
+									RAÚL ANTONIO TORRES TORRES
+								</div>
+								<div class="shadowtext">
+									RAÚL ANTONIO TORRES TORRES
+								</div>
+							</div>
+						<p>Diseñador Gráfico Web</p></div>
+					</div>
+					<div class="bg-middle">
+						<div class="clipped-nickname-container">
+							<div class="clipped-nickname">
+								RAULHEAT
+							</div>
+						</div>
+					</div>
+					<div class="dangerline"></div>
+					<div class="character"></div>
+					<div class="bg-bottom">
+						<div class="bg"></div>
+					</div>
+					<div class="circle"></div>
+				</div>	
+			</div>
 			<div class="grettings-container">
 				<div class="gretting-title">
 					<h1>Bienvenidos a mi portafolio</h1>
 					<h3>Aquí podrán ver mis trabajos y proyectos de diseño web y otros.</h3>
-					<button class="welcome-button">Ver mis trabajos</button>
+				</div>
+				<div class="skills-icons">
+					<img src="images/icon-photoshop.webp" alt="photoshop">
+					<img src="images/icon-illustrator.webp" alt="illustrator">
+					<img src="images/icon-aftereffects.webp" alt="after effects">
+					<img src="images/icon-adobexd.webp" alt="adobexd">
+					<img src="images/icon-figma.webp" alt="figma">
+					<img src="images/icon-html5.webp" alt="html">
+					<img src="images/icon-css3.webp" alt="css">
+					<img src="images/icon-js.webp" alt="js">
+					<img src="images/icon-pug.webp" alt="pug">
+					<img src="images/icon-sass.webp" alt="sass">
+					<img src="images/icon-angular.webp" alt="angular">
+					<img src="images/icon-react.webp" alt="react">
+					<img src="images/icon-medibang.webp" alt="medibang">
 				</div>
 			</div>
 			<div class="carousel-wrapper">
@@ -191,35 +288,156 @@
 
 		</section>
 
-		<div id="fh5co-resume" class="fh5co-bg-color">
-			<div class="container">
-				<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--width2 grid-item--height2"></div>
-					<div class="grid-item grid-item--height3"></div>
-					<div class="grid-item grid-item--height2"></div>
-					<div class="grid-item grid-item--width3"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--height2"></div>
-					<div class="grid-item grid-item--width2 grid-item--height3"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--height2"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--width2 grid-item--height2"></div>
-					<div class="grid-item grid-item--width2"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--height2"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--height3"></div>
-					<div class="grid-item grid-item--height2"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item grid-item--height2"></div>
-				  </div>
+		<section id="portfolioWorks" class="fh5co-bg-color">
+			<div class="works-container">
+				<div class="works-item">
+					<div class="section-title">
+						<div class="section-icon"><i class="icon-briefcase2"></i></div>
+						<h4>Trabajos</h4>
+						<p>Sección que muestra los proyectos en los cuales trabajé como diseñador gráfico y web. Está
+							dividido por empresas en las cuales fui colaborador.</p>
+					</div>
+					<div class="work-title">
+						<div class="title" style="background-size: 1px 50%;">
+							<div class="work-logo">
+								<img src="images/kaldera-logo.webp" alt="" width="50" height="50">
+							</div>
+							<div class="work-text">
+								<h3>Trabajos destacados en <span>Kaldera</span></h3>
+								<p>2022 - 2024</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="work-gallery gallery-grip" id="gallery">
+						<div class="grip-container">
+							<figure class="gallery_item">
+								<img src="images/min_kaldera01.webp" alt="Proforma" image-data="Proforma "/>
+								<figcaption><a href="#">1</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/suspension-bridge.jpg"
+									alt="The Clifton Suspension Bridge" />
+								<figcaption><a href="#">2</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
+								<figcaption><a href="#">3</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
+								<figcaption><a href="#">4</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-balloons1.jpg"
+									alt="a single checked balloon" />
+								<figcaption><a href="#">5</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/dog-balloon.jpg"
+									alt="a hot air balloon shaped like a dog" />
+								<figcaption><a href="#">6</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/abq-balloons.jpg"
+									alt="View from a hot air balloon of other balloons" />
+								<figcaption><a href="#">7</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/disney-balloon.jpg"
+									alt="a balloon fairground ride" />
+								<figcaption><a href="#">8</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-harbor.jpg"
+									alt="sunrise over a harbor" />
+								<figcaption><a href="#">9</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-balloons2.jpg"
+									alt="three hot air balloons in a blue sky" />
+								<figcaption><a href="#">10</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/toronto.jpg"
+									alt="the Toronto light up sign at night" />
+								<figcaption><a href="#">11</a></figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="works-item">
+					<div class="work-title">
+						<div class="title" style="background-size: 1px 100%;">
+							<div class="work-logo">
+								<img src="images/colabra-logo.webp" alt="" width="50" height="50">
+							</div>
+							<div class="work-text">
+								<h3>Trabajos destacados en <span>Colabra</span></h3>
+								<p>2014 - 2022</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="work-gallery gallery-grip">
+						<div class="grip-container">
+							<figure>
+								<img src="https://assets.codepen.io/12005/windmill.jpg" alt="A windmill" />
+								<figcaption><a href="#">1</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/suspension-bridge.jpg"
+									alt="The Clifton Suspension Bridge" />
+								<figcaption><a href="#">2</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
+								<figcaption><a href="#">3</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
+								<figcaption><a href="#">4</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-balloons1.jpg"
+									alt="a single checked balloon" />
+								<figcaption><a href="#">5</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/dog-balloon.jpg"
+									alt="a hot air balloon shaped like a dog" />
+								<figcaption><a href="#">6</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/abq-balloons.jpg"
+									alt="View from a hot air balloon of other balloons" />
+								<figcaption><a href="#">7</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/disney-balloon.jpg"
+									alt="a balloon fairground ride" />
+								<figcaption><a href="#">8</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-harbor.jpg"
+									alt="sunrise over a harbor" />
+								<figcaption><a href="#">9</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/bristol-balloons2.jpg"
+									alt="three hot air balloons in a blue sky" />
+								<figcaption><a href="#">10</a></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.codepen.io/12005/toronto.jpg"
+									alt="the Toronto light up sign at night" />
+								<figcaption><a href="#">11</a></figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 
 
 		<div id="fh5co-features" class="animate-box">
@@ -446,7 +664,7 @@
 						<h2 style="margin-bottom: 0;">Work</h2>
 					</div>
 				</div>
-				<section id="gallery">
+				<section id="galler">
 					<div class="container">
 
 						<!-- Filterable Gallery -->
@@ -912,8 +1130,15 @@
 						<div class="lightbox">
 							<div class="lightbox_wrapper">
 								<div class="lightbox_content">
-									<img src="" class="lightbox_img" alt="lightbox-img">
-									<div class="lightbox_caption">caption</div>
+									<div class="image-container">
+										<img src="" class="lightbox_img" alt="lightbox-img">
+									</div>
+									<div class="data-container">
+										<div class="data-text">
+											<div class="lightbox_caption">caption</div>
+											<div class="lightbox_data">pruebasintexto</div>
+										</div>
+									</div>	
 								</div>
 							</div>
 							<div class="lightbox_close">

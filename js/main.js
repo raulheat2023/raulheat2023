@@ -159,6 +159,15 @@ function shrinkMenu(){
 	$('body').toggleClass('shrink-menu')
 }
 
+
+function aboutWindow(){
+	var aboutwindow = document.getElementById("aboutWindow");
+	var aboutbutton = document.getElementById("fh5co-header")
+	aboutwindow.classList.toggle("active");
+	aboutbutton.classList.toggle("aboutactive");
+}
+
+
 var header = document.getElementById("mainMenu");
 var btns = header.getElementsByClassName("option");
 for (var i = 0; i < btns.length; i++) {
