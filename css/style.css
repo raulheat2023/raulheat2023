@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /* =======================================================
 *
 * 	Template Style 
@@ -55,7 +54,7 @@ body {
 }
 
 a {
-  color: #239FA5;
+  color: var(--main-text-color);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -64,7 +63,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #239FA5;
+  color: var(--main-text-color);
   outline: none;
   text-decoration: none;
 }
@@ -1705,7 +1704,7 @@ button.profile-message {
   margin: 0;
   border: none;
   color: white;
-  background-color: #239FA5;
+  background-color: var(--main-text-color);
   border-radius: 15px;
   align-items: center;
   justify-content: center;
@@ -1730,8 +1729,8 @@ button.profile-message {
 }
 
 .colapse-button:hover {
-  background-color: #239FA5;
-  border-color: #239FA5;
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
   color: white;
 }
 
@@ -1753,7 +1752,7 @@ button.profile-message {
   font-family: 'Roboto Flex', sans-serif;
   text-align: center;
   font-weight: 500;
-  color: #239FA5;
+  color: var(--main-text-color);
   line-height: 26px;
   margin-bottom: 0;
 }
@@ -1816,7 +1815,7 @@ button.profile-message {
 .main-menu ul li.option::after {
   content: '';
   display: flex;
-  background-color: #239FA5;
+  background-color: var(--main-text-color);
   border-radius: 200px;
   width: 0;
   height: 0;
@@ -1834,7 +1833,7 @@ button.profile-message {
   content: '';
   height: 1px;
   width: 0;
-  background-color: #239FA5;
+  background-color: var(--main-text-color);
   display: flex;
   position: absolute;
   bottom: 0;
@@ -1872,12 +1871,12 @@ a.shrinkoption {
   background-color: white;
   height: 30px;
   display: flex;
-  color: #239FA5;
+  color: var(--main-text-color);
   width: 30px;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid #239FA5;
+  border: 1px solid var(--main-text-color);
   transition: all ease .3s;
   position: absolute;
   left: 0;
@@ -1888,9 +1887,9 @@ a.shrinkoption {
 }
 
 a.shrinkoption:hover {
-  background-color: #239FA5;
+  background-color: var(--main-text-color);
   color: white;
-  border-color: #239FA5;
+  border-color: var(--main-text-color);
 }
 
 .shrink-menu .shrinkoption {
@@ -1923,8 +1922,8 @@ a.shrinkoption:hover {
 }
 
 .mainmenu-container .social .social-button:hover {
-  background-color: #239FA5;
-  border-color: #239FA5;
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
   color: white;
 }
 
@@ -1937,7 +1936,7 @@ a.shrinkoption:hover {
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  color: #239FA5;
+  color: var(--main-text-color);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -1965,7 +1964,7 @@ button.welcome-button {
   height: 120px;
   border-radius: 60px;
   border: none;
-  background: linear-gradient(180deg, #239FA5 0%, #1bc2cb 100%);
+  background: linear-gradient(180deg, var(--main-text-color) 0%, var(--main-text-color) 100%);
   color: white;
   line-height: 1;
   font-weight: 600;
@@ -1982,7 +1981,7 @@ button.welcome-button::before {
 
   width: 20px;
   height: 20px;
-  background: #1bc2cb;
+  background: var(--main-text-color);
   border-radius: 50%;
   position: absolute;
   left: 50px;
@@ -2059,6 +2058,8 @@ button.welcome-button .icon-container .icon-cross2 {
   display: flex;
   wrap: nowrap;
   overflow: hidden;
+  width: 500px;
+  height: 100vh;
 }
 
 .carousel_item {
@@ -2067,8 +2068,8 @@ button.welcome-button .icon-container .icon-cross2 {
   height: 100vh;
   transition: all 0.5s linear;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  background-size: 500px 100%;
 }
 
 .carousel_text {
@@ -2086,23 +2087,23 @@ button.welcome-button .icon-container .icon-cross2 {
 }
 
 .item1 {
-  background-image: url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("../images/carousel_01.webp");
 }
 
 .item2 {
-  background-image: url("https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=519&q=80");
+  background-image: url("../images/carousel_02.webp");
 }
 
 .item3 {
-  background-image: url("https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: url("../images/carousel_03.webp");
 }
 
 .item4 {
-  background-image: url("https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8QUl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  background-image: url("../images/carousel_04.webp");
 }
 
 .item5 {
-  background-image: url("https://images.unsplash.com/photo-1673901736622-c3f06b08511f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");
+  background-image: url("../images/carousel_05.webp");
 }
 
 .about-transformation {
@@ -2235,6 +2236,18 @@ animation-delay: .3s;
   animation-delay: 1.5s;
 }
 
+.bg-top .tools .tool:nth-child(14){
+  animation-delay: 1.6s;
+}
+
+.bg-top .tools .tool:nth-child(15){
+  animation-delay: 1.7s;
+}
+
+.bg-top .tools .tool:nth-child(16){
+  animation-delay: 1.8s;
+}
+
 .bg-top .tools .tool img{
   width: 30px;
   height: 30px;
@@ -2260,7 +2273,7 @@ animation-delay: .3s;
   font-weight: 800;
   text-align: left;
   line-height: 1;
-  color: #1bc2cb;
+  color: var(--main-text-color);
   z-index: 1;
 }
 
@@ -2273,9 +2286,8 @@ animation-delay: .3s;
   top: 0;
   color: white;
   line-height: 1;
-  animation: shadowmovement 10s infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  margin-left: -6px;
+    margin-top: -5px;
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
@@ -2539,7 +2551,7 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
 }
 
 .work-text h3 span {
-  color: #239FA5;
+  color: var(--main-text-color);
 }
 
 .work-text p {
@@ -2577,7 +2589,7 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
 .section-title h4 {
   font-size: 44px;
   font-weight: 800;
-  color: #239FA5;
+  color: var(--main-text-color);
   margin: 0;
 }
 
@@ -2612,4 +2624,253 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   left: 28px;
 }
 
+/*skills*/
+.lighbox_skill_container{}
+
+.lighbox_skill_container .skills {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.lighbox_skill_container span{
+  display: none;
+  padding: 0 10px;
+  border-radius: 20px;
+  background-color: #ccc;
+  color: white;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.lighbox_skill_container .figma .skill-figma{
+  display: block;
+  background-color: #23a6d5;
+}
+
+.lighbox_skill_container .angular .skill-angular{
+  display: block;
+  background-color: #7c2626;
+}
+
+.lighbox_skill_container .photoshop .skill-photoshop{
+  display: block;
+  background-color: #2e3eca;
+}
+
+.lighbox_skill_container .illustrator .skill-illustrator{
+  display: block;
+  background-color: #da7624;
+}
+
+.lighbox_skill_container .angular .skill-kendo{
+  display: block;
+  background-color: #29c029;
+}
+
+.lighbox_skill_container .material .skill-material{
+  display: block;
+  background-color: #2a5097;
+}
+
+.lighbox_skill_container .css .skill-css{
+  display: block;
+  background-color: #5e53ff;
+}
+
+.lighbox_skill_container .scss .skill-scss{
+  display: block;
+  background-color: #e913c5;
+}
+
+.lighbox_skill_container .typescript .skill-typescript{
+  display: block;
+  background-color: #3560ee;
+}
+
+.lighbox_skill_container .html .skill-html{
+  display: block;
+  background-color: #fa7b05;
+}
+
+.lighbox_skill_container .js .skill-js{
+  display: block;
+  background-color: #ffe603;
+  color: #000;
+}
+
+
+.lighbox_skill_container .aftereffects .skill-aftereffects{
+  display: block;
+  background-color: #6d01c5;
+}
+
+.lighbox_skill_container .adobexd .skill-adobexd{
+  display: block;
+  background-color: #6a086d;
+}
+
+.lighbox_skill_container .ionic .skill-ionic{
+  display: block;
+  background-color: #038eff;
+}
+
+
+.lighbox_skill_container .reactnative .skill-reactnative{
+  display: block;
+  background-color: #03d9ff;
+}
+
+.lighbox_skill_container .pug .skill-pug{
+  display: block;
+  background-color: #ffd95c;
+  color: #000;
+}
+
+.lighbox_skill_container .git .skill-git{
+  display: block;
+  background-color: #e45327;
+}
+
+.section-projects {
+  column-count: 6;
+  column-gap: 5px;
+  margin: 10px;
+}
+
+.project-item.card {
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  border-radius: 10px;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-item.card img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.section-projects .project-title {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.project-description{
+  padding: 0 10px 10px;
+}
+
+.project-description p{
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-description .skills{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.project-description .skills .tool{
+  background-color: #ccc;
+  padding: 0 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  color: white;
+}
+
+.project-description .skills .tool.figma{
+  background-color: #23a6d5;
+}
+
+.project-description .skills .tool.angular{
+  background-color: #7c2626;
+}
+
+.project-description .skills .tool.photoshop{
+  background-color: #2e3eca;
+}
+
+.project-description .skills .tool.illustrator{
+  background-color: #da7624;
+}
+
+.project-description .skills .tool.kendo{
+  background-color: #29c029;
+}
+
+.project-description .skills .tool.material{
+  background-color: #2a5097;
+}
+
+.project-description .skills .tool.css{
+  background-color: #5e53ff;
+}
+
+.project-description .skills .tool.scss{
+  background-color: #e913c5;
+}
+
+.project-description .skills .tool.typescript{
+  background-color: #3560ee;
+}
+
+.project-description .skills .tool.html{
+  background-color: #fa7b05;
+}
+
+.project-description .skills .tool.js{
+  background-color: #ffe603;
+  color: #000;
+}
+
+.project-description .skills .tool.aftereffects{
+  background-color: #6d01c5;
+}
+
+.project-description .skills .tool.adobexd{
+  background-color: #6a086d;
+}
+
+.project-description .skills .tool.ionic{
+  background-color: #038eff;
+}
+
+
+.project-description .skills .tool.reactnative{
+  background-color: #03d9ff;
+}
+
+.project-description .skills .tool.pug{
+  background-color: #ffd95c;
+  color: #000;
+}
+
+.project-description .skills .tool.git{
+  background-color: #e45327;
+}
+
+.project-description .skills .tool.freelance{
+  background-color: #d6484f;
+}
+
+.project-description .skills .tool.medibang{
+  background-color: #4dd648;
+}
+
+.project-description .skills .tool.ilustration{
+  background-color: #7096e7;
+}
+
+.project-description .skills .tool.personal{
+  background-color: #d467cf;
+}
 /*# sourceMappingURL=style.css.map */

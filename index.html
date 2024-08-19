@@ -40,6 +40,11 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<style>
+		:root{
+  		--main-text-color: #0099ff;
+		}
+	</style>
 	<!--Light gallery css-->
 	<style>
 		.lead {
@@ -67,6 +72,7 @@
 			grid-template-rows: 1fr auto;
 			margin-bottom: 10px;
 			break-inside: avoid;
+			box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
 		}
 
 		.gallery-grip figure>img {
@@ -149,11 +155,11 @@
 						<a href="#portfolioWorks" class="shrinkoption"><i class="icon-briefcase2"></i></a>
 					</li>
 					<li class="option">
-						<a href="#portfolioprojects" class="expandedoption">
+						<a href="#portfolioProjects" class="expandedoption">
 							<i class="icon-mug"></i>
 							<span>Proyectos</span>
 						</a>
-						<a href="#fh5co-resume" class="shrinkoption"><i class="icon-mug"></i></a>
+						<a href="#portfolioProjects" class="shrinkoption"><i class="icon-mug"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -205,6 +211,9 @@
 								<img src="images/icon-js.webp" alt="js">
 							</div>
 							<div class="tool">
+								<img src="images/icon-ts.webp" alt="ts">
+							</div>
+							<div class="tool">
 								<img src="images/icon-pug.webp" alt="pug">
 							</div>
 							<div class="tool">
@@ -219,6 +228,9 @@
 							<div class="tool">
 								<img src="images/icon-medibang.webp" alt="medibang">
 							</div>
+							<div class="tool">
+								<img src="images/icon-kendo.webp" alt="kendo">
+							</div>
 						</div>
 						<div class="qr"></div>
 						<div class="about-text">
@@ -230,7 +242,8 @@
 									RAÚL ANTONIO TORRES TORRES
 								</div>
 							</div>
-						<p>Diseñador Gráfico Web</p></div>
+							<p>Diseñador Gráfico Web</p>
+						</div>
 					</div>
 					<div class="bg-middle">
 						<div class="clipped-nickname-container">
@@ -245,7 +258,7 @@
 						<div class="bg"></div>
 					</div>
 					<div class="circle"></div>
-				</div>	
+				</div>
 			</div>
 			<div class="grettings-container">
 				<div class="gretting-title">
@@ -261,10 +274,13 @@
 					<img src="images/icon-html5.webp" alt="html">
 					<img src="images/icon-css3.webp" alt="css">
 					<img src="images/icon-js.webp" alt="js">
+					<img src="images/icon-ts.webp" alt="ts">
 					<img src="images/icon-pug.webp" alt="pug">
 					<img src="images/icon-sass.webp" alt="sass">
 					<img src="images/icon-angular.webp" alt="angular">
 					<img src="images/icon-react.webp" alt="react">
+					<img src="images/icon-material.webp" alt="material">
+					<img src="images/icon-kendo.webp" alt="kendo">
 					<img src="images/icon-medibang.webp" alt="medibang">
 				</div>
 			</div>
@@ -312,56 +328,53 @@
 					<div class="work-gallery gallery-grip" id="gallery">
 						<div class="grip-container">
 							<figure class="gallery_item">
-								<img src="images/min_kaldera01.webp" alt="Proforma" image-data="Proforma "/>
-								<figcaption><a href="#">1</a></figcaption>
+								<img src="images/min_kaldera01.webp" alt="Proforma(AES)"
+									class="skills figma angular html scss typescript"
+									image-data="Proyecto en el que tuve la tarea de diseñar una nueva interfaz basada en la nueva imagen corporativa de AES. Además estuve a cargo de su implementación en Angular. Este proyecto sería tomado como ejemplo para los siguientes proyectos de Kaldera/AES." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/suspension-bridge.jpg"
-									alt="The Clifton Suspension Bridge" />
-								<figcaption><a href="#">2</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera02.webp" alt="Price Engine(AES)"
+									class="skills figma html scss angular typescript kendo material"
+									image-data="Proyecto de renovación de imagen y experiencia de usuario. Se utilizó Kendo UI y Material UI, y se adaptó para que tuviera el diseño aplicado en los demás proyectos de AES." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
-								<figcaption><a href="#">3</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera03.webp" alt="ERNC(AES)"
+									class="skills figma html scss angular typescript kendo material"
+									image-data="La tarea principal en este proyecto fue unir elementos de Kendo (gráficos) con lógica de ng-class y un scroll horizontal (JS)." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
-								<figcaption><a href="#">4</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera09.webp" alt="AES Mailing"
+									class="skills figma illustrator html css"
+									image-data="Diseño e implementación de mailing para AES." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-balloons1.jpg"
-									alt="a single checked balloon" />
-								<figcaption><a href="#">5</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera04.webp" alt="Kaldera Web"
+									class="skills html css js aftereffects photoshop"
+									image-data="Rediseño de web de Kaldera. Además de renovar la imagen del logo, se pensó en un nuevo concepto de empresa y se quiso reflejar en el nuevo diseño." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/dog-balloon.jpg"
-									alt="a hot air balloon shaped like a dog" />
-								<figcaption><a href="#">6</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera05.webp" alt="Proyecto Argón landing page"
+									class="skills angular html css js figma"
+									image-data="Diseño e implementación de landing page en angular de proyecto Argón." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/abq-balloons.jpg"
-									alt="View from a hot air balloon of other balloons" />
-								<figcaption><a href="#">7</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera06.webp" alt="Proyecto Argón Dashboard"
+									class="skills angular html css js figma"
+									image-data="Diseño e implementación de dashboard en angular de proyecto Argón." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/disney-balloon.jpg"
-									alt="a balloon fairground ride" />
-								<figcaption><a href="#">8</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera07.webp" alt="MotelSky website" class="skills html css js"
+									image-data="Diseño y mantenimiento de pagina web de MotelSky. Mis tareas en el sitio incluían el diseño de páginas, elementos web y la optimización del sitio tanto en performance como también el SEO." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-harbor.jpg"
-									alt="sunrise over a harbor" />
-								<figcaption><a href="#">9</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera08.webp" alt="MotelSky Soportes"
+									class="skills photoshop illustrator"
+									image-data="Diseño de diferentes soportes para redes sociales e impresión." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-balloons2.jpg"
-									alt="three hot air balloons in a blue sky" />
-								<figcaption><a href="#">10</a></figcaption>
-							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/toronto.jpg"
-									alt="the Toronto light up sign at night" />
-								<figcaption><a href="#">11</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_kaldera010.webp" alt="AES Gestión de accionistas"
+									class="skills adobexd"
+									image-data="Diseño de interfaz de usuario AES Gestión de accionistas." />
 							</figure>
 						</div>
 					</div>
@@ -381,57 +394,98 @@
 					</div>
 					<div class="work-gallery gallery-grip">
 						<div class="grip-container">
-							<figure>
-								<img src="https://assets.codepen.io/12005/windmill.jpg" alt="A windmill" />
-								<figcaption><a href="#">1</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra01.webp" alt="Mibe Canalmobile(Banco Estado App)"
+									class="skills adobexd ionic reactnative scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Banco Estado (Mibe). Implementación frontend en ionic inicialmente y luego migrada a react-native." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/suspension-bridge.jpg"
-									alt="The Clifton Suspension Bridge" />
-								<figcaption><a href="#">2</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra02.webp" alt="Alsea Canalmobile"
+									class="skills adobexd reactnative scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Alsea." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
-								<figcaption><a href="#">3</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra03.webp" alt="Antofagasta Minerals Canalmobile"
+									class="skills adobexd reactnative scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Antofagasta Minerals." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
-								<figcaption><a href="#">4</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra04.webp" alt="BCI Canalmobile"
+									class="skills adobexd reactnative scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de BCI." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-balloons1.jpg"
-									alt="a single checked balloon" />
-								<figcaption><a href="#">5</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra05.webp" alt="Bice Intranet" class="skills adobexd html css"
+									image-data="Rediseño e implementación de intranet de Banco Bice." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/dog-balloon.jpg"
-									alt="a hot air balloon shaped like a dog" />
-								<figcaption><a href="#">6</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra06.webp" alt="Canalmobile 4.0"
+									class="skills reactnative scss pug git"
+									image-data="Implementación de producto Canalmobile 4.0." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/abq-balloons.jpg"
-									alt="View from a hot air balloon of other balloons" />
-								<figcaption><a href="#">7</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra07.webp" alt="Concin 2019 Canalmobile"
+									class="skills adobexd reactnative scss pug git"
+									image-data="Diseño e implementación de app de Congreso de comunicaciones internas CONCIN 2019." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/disney-balloon.jpg"
-									alt="a balloon fairground ride" />
-								<figcaption><a href="#">8</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra08.webp" alt="Somos Consorcio Canalmobile"
+									class="skills adobexd ionic scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Seguros Consorcio." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-harbor.jpg"
-									alt="sunrise over a harbor" />
-								<figcaption><a href="#">9</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra09.webp" alt="Farmacias Ahumada Canalmobile"
+									class="skills adobexd ionic scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Farmacias Ahumada." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/bristol-balloons2.jpg"
-									alt="three hot air balloons in a blue sky" />
-								<figcaption><a href="#">10</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra010.webp" alt="Aquanet(Aguas Andinas)"
+									class="skills adobexd css html"
+									image-data="Diseño e implementación multiples páginas y contenidos para la intranet de Aguas Andinas." />
 							</figure>
-							<figure>
-								<img src="https://assets.codepen.io/12005/toronto.jpg"
-									alt="the Toronto light up sign at night" />
-								<figcaption><a href="#">11</a></figcaption>
+							<figure class="gallery_item">
+								<img src="images/min_colabra011.webp" alt="Cap's Canalmobile"
+									class="skills adobexd ionic scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Cementerios Nuestros Parques." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra012.webp" alt="Red Megacentro Canalmobile"
+									class="skills adobexd ionic scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Red Megacentro." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra013.webp" alt="Santander Canalmobile"
+									class="skills adobexd ionic reactnative scss pug git"
+									image-data="Diseño e implementación de app de comunicaciones internas de Santander." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra014.webp" alt="Somos CLA Canalmobile"
+									class="skills adobexd reactnative scss pug git"
+									image-data="Implementación de app de comunicaciones internas de Caja de compensación Los Andes." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra015.webp" alt="Proyecto Stiky"
+									class="skills angular scss pug git"
+									image-data="Implementación de proyecto Stiky de Colabra." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra016.webp" alt="Tutorial de descarga para colaboradores"
+									class="skills photoshop"
+									image-data="Diseño publicitario para colaboradores que descarguen la app de Canalmobile." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra017.webp" alt="Ambiapp Canalmobile"
+									class="skills reactnative scss pug git"
+									image-data="Implementación de app de comunicaciones internas de Ambipar." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra018.webp" alt="Videos instructivos Telefónica"
+									class="skills photoshop aftereffects"
+									image-data="Diseño y producción de videos instructivos para Telefónica." />
+							</figure>
+							<figure class="gallery_item">
+								<img src="images/min_colabra019.webp" alt="Web Aguas Andinas" class="skills html css"
+									image-data="Diseño e implementación de páginas para la web de Aguas Andinas(versión anterior a la actual)." />
 							</figure>
 						</div>
 					</div>
@@ -440,716 +494,169 @@
 		</section>
 
 
-		<div id="fh5co-features" class="animate-box">
-			<div class="container">
-				<div class="services-padding">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>Mis Servicios</h2>
+		<section id="portfolioProjects" class="fh5co-bg-color">
+			<div class="works-container">
+				<div class="section-title">
+					<div class="section-icon"><i class="icon-mug"></i></div>
+					<h4>Proyectos </h4>
+					<p>Sección que muestra los proyectos en los cuales trabajé como diseñador gráfico freelance y otros.
+						Además agrego las ilustraciones que publico en mis redes sociales.</p>
+				</div>
+				<div class="section-projects">
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects01.webp" alt="projects01">
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-laptop"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Diseño de propuestas(Prototipado)</h3>
-									<p>Experiencia en diseño de propuestas gráficas para su posterior implementación.
-										Conocimientos en Adobe XD y Figma.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-code"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Desarrollo Web Mobile(Frontend)</h3>
-									<p>Experiencia en desarrollo de frontend web y mobile en diferentes frameworks.
-										Conocimientos en IONIC, ANGULAR y REACT NATIVE, HTML5, CSS(SCSS).</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-briefcase"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Branding</h3>
-									<p>Experiencia en diseño de marca, imagen corporativa y generación de manuales de
-										implementación y usos.
-										Conocimientos en Indesign, Illustrator y Photoshop.
-									</p>
-								</div>
+						<div class="project-title">Bodas</div>
+						<div class="project-description">
+							<p>Diseño de soportes de impresión para bodas.</p>
+							<div class="skills">
+								<div class="tool photoshop">photoshop</div>
+								<div class="tool illustrator">illustrator</div>
+								<div class="tool freelance">freelance</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-brush"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Ilustración</h3>
-									<p>Conocimiento en ilustración digital y tradicional. Conocimientos en Medibang Pro
-										y Corel Painter.</p>
-								</div>
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects02.webp" alt="projects01">
+						</div>
+						<div class="project-title">Basf</div>
+						<div class="project-description">
+							<p>Diseño de soportes para empresa Basf.</p>
+							<div class="skills">
+								<div class="tool photoshop">photoshop</div>
+								<div class="tool aftereffects">after effects</div>
+								<div class="tool illustrator">illustrator</div>
+								<div class="tool freelance">freelance</div>
 							</div>
 						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-expand"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>3D Modeling</h3>
-									<p>Modelado 3d en programas como MAYA y 3DSMAX.</p>
-								</div>
+					</div>
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects03.webp" alt="projects01">
+						</div>
+						<div class="project-title">DCVUIP</div>
+						<div class="project-description">
+							<p>Proyecto personal de UI. <a href="https://raulheat2023.github.io/DCVUIP/" target="_blank">Ver más</a></p>
+							
+							<div class="skills">
+								<div class="tool html">html</div>
+								<div class="tool css">css</div>
+								<div class="tool js">js</div>
+								<div class="tool git">git</div>
+								<div class="tool personal">personal</div>
 							</div>
 						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-printer"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Diseño Gráfico e Impresión</h3>
-									<p>Conocimiento en diseño de originales, separación de colores y métodos de
-										impresión.</p>
+					</div>
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects04.webp" alt="projects01">
+						</div>
+						<div class="project-title">Poison Fanart</div>
+						<div class="project-description">
+							<p>Ilustración digital.</p>
+							
+							<div class="skills">
+								<div class="tool medibang">medibang</div>
+								<div class="tool photoshop">photoshop</div>
+								<div class="tool ilustration">ilustracion</div>
+								<div class="tool personal">personal</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects05.webp" alt="projects01">
+						</div>
+						<div class="project-title">S4 Fanart</div>
+						<div class="project-description">
+							<p>Ilustración digital.</p>
+							
+							<div class="skills">
+								<div class="tool photoshop">photoshop</div>
+								<div class="tool ilustration">ilustracion</div>
+								<div class="tool personal">personal</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item card">
+						<div class="project-image cardgallery_item">
+							<img src="images/min_projects06.webp" alt="projects01">
+						</div>
+						<div class="project-title">Planetajuegos</div>
+						<div class="project-description">
+							<p>Diseño de soportes web y redes sociales de Planetajeugos.</p>
+							<div class="skills">
+								<div class="tool photoshop">photoshop</div>
+								<div class="tool illustrator">illustrator</div>
+								<div class="tool freelance">freelance</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Lightbox -->
+		<div class="lightbox">
+			<div class="lightbox_wrapper">
+				<div class="lightbox_content">
+					<div class="image-container">
+						<img src="" class="lightbox_img" alt="lightbox-img">
+					</div>
+					<div class="data-container">
+						<div class="data-text">
+							<div class="lightbox_caption">caption</div>
+							<div class="lightbox_data">pruebasintexto</div>
+							<div class="lighbox_skill_container">
+								<div class="lightbox_skills">
+									<span class="skill-photoshop">Photoshop</span>
+									<span class="skill-illustrator">Illustrator</span>
+									<span class="skill-adobexd">Adobe XD</span>
+									<span class="skill-figma">Figma</span>
+									<span class="skill-kendo">Kendo</span>
+									<span class="skill-angular">Angular</span>
+									<span class="skill-html">HTML</span>
+									<span class="skill-css">CSS</span>
+									<span class="skill-material">Material</span>
+									<span class="skill-js">JS</span>
+									<span class="skill-scss">SCSS</span>
+									<span class="skill-typescript">Typescript</span>
+									<span class="skill-aftereffects">After Effects</span>
+									<span class="skill-reactnative">React-native</span>
+									<span class="skill-pug">Pug</span>
+									<span class="skill-git">Git</span>
+									<span class="skill-ionic">Ionic</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="lightbox_close">
+				<span></span>
+				<span></span>
+			</div>
 		</div>
-
-		<div id="fh5co-skills" class="animate-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Habilidades</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="progress-wrap">
-							<h3><span class="name-left">HTML</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">CSS</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Prototipado</span><span class="value-right">95%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-6">
-						<div class="progress-wrap">
-							<h3><span class="name-left">Diseño Gráfico</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Ilustración</span><span class="value-right">80%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-									aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Modelado 3D y otros</span><span class="value-right">70%</span>
-							</h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar"
-									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/visualstudio.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/figma.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/photoshop.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/illustrator.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/aftereffects.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/medibang.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/angular.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/reactnative.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/ionic.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/3dsmax.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/maya.webp" alt="" width="40">
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-2 text-center col-padding">
-						<div class="skill-logo">
-							<img src="images/office.webp" alt="" width="40">
-						</div>
+		<!-- Card Lightbox -->
+		<div class="cardlightbox">
+			<div class="lightbox_wrapper">
+				<div class="lightbox_content">
+					<div class="image-container">
+						<img src="" class="cardlightbox_img" alt="lightbox-img">
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="fh5co-work" class="fh5co-bg-dark">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="margin-bottom: 1em;">
-						<h2 style="margin-bottom: 0;">Work</h2>
-					</div>
-				</div>
-				<section id="galler">
-					<div class="container">
-
-						<!-- Filterable Gallery -->
-						<ul class="gallery_tabs">
-							<li class="active" data-filter="all">Todos</li>
-							<li data-filter="web">Web</li>
-							<li data-filter="mobile">Mobile</li>
-							<li data-filter="design">Varios</li>
-						</ul>
-
-						<div class="gallery_wrapper">
-							<div class="gallery_item web">
-								<img src="images/035_min.webp"
-									alt="Aes Gestión de Accionistas - Kaldera / Diseño de interfaz">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/073_min.webp" alt="Aes Mailing - Kaldera / Diseño de interfaz">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/074_min.webp"
-									alt="Aes Proforma - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/075_min.webp"
-									alt="Aes Mailing - Kaldera / Diseño de interfaz e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/076_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/077_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/078_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/079_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/080_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/081_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/082_min.webp"
-									alt="Aes iCommercial - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/083_min.webp"
-									alt="Argón - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/084_min.webp"
-									alt="Argón - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/085_min.webp"
-									alt="Argón - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/086_min.webp"
-									alt="Argón - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/087_min.webp" alt="Rediseño logo - Kaldera / Imagen Corporativa ">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/088_min.webp"
-									alt="Rediseño Sitio web - Kaldera / Diseño de interfaz e implementación web(Angular)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/089_min.webp"
-									alt="Motelsky web - Kaldera / Diseño de interfaz e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/092_min.webp"
-									alt="Motelsky web - Kaldera / Diseño de interfaz e implementación web">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/090_min.webp"
-									alt="Motelsky Instagram - Kaldera / Diseño de soporte para redes sociales">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/091_min.webp"
-									alt="Motelsky Instagram - Kaldera / Diseño de soporte para redes sociales">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/093_min.webp"
-									alt="Motelsky Optimización mobile y SEO - Kaldera / Diseño de interfaz, implementación web y SEO">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/094_min.webp"
-									alt="UDLA Portal de admisión - Kaldera / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/01_min.webp"
-									alt="Aguas Andinas Internet Fondos Concursables - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/02_min.webp" alt="Colabra Media Brochure - Colabra / Diseño Gráfico">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/03_min.webp"
-									alt="Banco Consorcio Intranet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/04_min.webp"
-									alt="Antofagasta Minerals app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/05_min.webp"
-									alt="CPT web responsive design - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/06_min.webp"
-									alt="CMPC Personas intranet - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/07_min.webp"
-									alt="Colabra Diseño Papelería - Colabra / Imagen Corporativa">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/08_min.webp"
-									alt="Cruz Verde Intranet - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/09_min.webp"
-									alt="Aguas Andinas Intranet SIG - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/010_min.webp"
-									alt="Aguas Andinas Internet Contingencia - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/011_min.webp"
-									alt="Aguas Andinas Intranet Gestión Integrada de Talento - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/012_min.webp"
-									alt="Panorama de comunicaciones internas - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/014_min.webp"
-									alt="CPT web desktop design - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/015_min.webp"
-									alt="Consorcio app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/016_min.webp"
-									alt="Aguas Andinas Intranet Celebración interna - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/017_min.webp"
-									alt="Telefónica Intranet Pasa el Dato - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/018_min.webp"
-									alt="Banco de Chile app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/019_min.webp"
-									alt="BCI app - Colabra / Diseño interfaz mobile e implementación (React Native)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/020_min.webp"
-									alt="Multi X app - Colabra / Diseño interfaz mobile e implementación (React Native)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/021_min.webp"
-									alt="Telefónica Intranet t-atiendo - Colabra / Ilustración e Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/024_min.webp"
-									alt="Aguas Andinas Intranet Movilidad Interna - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/025_min.webp"
-									alt="Encuesta Panorama de comunicaciones internas - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/027_min.webp"
-									alt="Parques del recuerdo intranet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/028_min.webp" alt="Codelco intranet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/029_min.webp" alt="Indumotora intranet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/030_min.webp"
-									alt="Salfacorp app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/031_min.webp" alt="Essal internet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/032_min.webp"
-									alt="Canalmobile parallax landing page - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/033_min.webp"
-									alt="Colabra Media Soportes - Colabra / Diseño de soportes web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/037_min.webp"
-									alt="Transbank app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/038_min.webp"
-									alt="Universidad Mayor app - Colabra / Diseño interfaz mobile">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/039_min.webp"
-									alt="Consorcio app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/041_min.webp"
-									alt="Mitta app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/043_min.webp"
-									alt="Cap's - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/044_min.webp" alt="Alsea app - Colabra / Implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/045_min.webp"
-									alt="Antofagasta Minerals app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/046_min.webp"
-									alt="BanChile app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/047_min.webp"
-									alt="Bice Intranet - Colabra / Diseño e implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/048_min.webp" alt="Sura Intranet - Colabra / Implementación web">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/049_min.webp"
-									alt="Cap app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/050_min.webp"
-									alt="Canalmobile 3.0 - Colabra / Implementación mobile(React Native)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/051_min.webp"
-									alt="Canalmobile 3.0 - Colabra / Implementación mobile(React Native)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/052_min.webp"
-									alt="Colmena app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/053_min.webp"
-									alt="Concha y Toro app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/054_min.webp"
-									alt="Corpgroup - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/055_min.webp"
-									alt="ECL app -  Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/056_min.webp"
-									alt="Essal app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/057_min.webp"
-									alt="Falp app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/058_min.webp"
-									alt="Farmacias Ahumada app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/059_min.webp"
-									alt="Oviedo app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/060_min.webp"
-									alt="Icafal app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/061_min.webp"
-									alt="Landes app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/062_min.webp"
-									alt="Canalmobile 2.0 - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/040_min.webp"
-									alt="Banco Estado app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/063_min.webp"
-									alt="Banco Estado app - Colabra / Diseño interfaz mobile e implementación (Ionic)1">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/064_min.webp"
-									alt="Banco Estado app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/072_min.webp"
-									alt="Banco Estado app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/065_min.webp"
-									alt="El Abra app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/066_min.webp"
-									alt="Minera Valle Central app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/067_min.webp"
-									alt="Corona app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/068_min.webp"
-									alt="Concin 2018 app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/069_min.webp"
-									alt="Parque El Sendero app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/070_min.webp"
-									alt="Banco Internacional app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item mobile">
-								<img src="images/071_min.webp"
-									alt="CMP app - Colabra / Diseño interfaz mobile e implementación (Ionic)">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/022_min.webp"
-									alt="Instagram promoción - Planetajuegos / Diseño para redes sociales">
-							</div>
-
-							<div class="gallery_item web">
-								<img src="images/026_min.webp"
-									alt="Diseño de banners web Planetajuegos - Planetajuegos / Diseño de soportes web">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/095_min.webp" alt="Ilustración s4League - Ilustración original">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/096_min.webp" alt="Ilustración s4League - Ilustración original">
-							</div>
-
-							<div class="gallery_item design">
-								<img src="images/097_min.webp" alt="Ilustración Fortnite - Ilustración original">
-							</div>
-						</div>
-
-						<!-- Lightbox -->
-						<div class="lightbox">
-							<div class="lightbox_wrapper">
-								<div class="lightbox_content">
-									<div class="image-container">
-										<img src="" class="lightbox_img" alt="lightbox-img">
-									</div>
-									<div class="data-container">
-										<div class="data-text">
-											<div class="lightbox_caption">caption</div>
-											<div class="lightbox_data">pruebasintexto</div>
-										</div>
-									</div>	
-								</div>
-							</div>
-							<div class="lightbox_close">
-								<span></span>
-								<span></span>
-							</div>
-						</div>
-					</div>
-				</section>
+			<div class="cardlightbox_close">
+				<span></span>
+				<span></span>
 			</div>
 		</div>
+	</div>
+</section>
+</div>
+	</div>
 	</div>
 
 	<div id="fh5co-footer">
@@ -1181,39 +688,6 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<!-- Modal -->
-	<div id="fh5co-modal">
-		<div class="modal-options">
-			<button onclick="closeModal()" class="fh5co-social-icons closebutton">
-				<i class="icon-cross"></i>
-			</button>
-		</div>
-		<div class="modal-wrapper">
-			<div class="modal-inner">
-				<div class="modal-title"></div>
-				<div class="modal-data">
-					<div class="perfil-txt">
-						<p>Hola, Mi nombre es Raúl Torres, diseñador Gráfico.</p>
-						<p>Llevo 13 años diseñando experiencias y exportandolas a código html y css. Por supuesto las
-							tecnologías avanzan y para no quedarme atras he adquirido conocimiento en el uso de
-							diferentes frameworks como react-native o angular, además de uso de procesadores como Sass o
-							Pug.</p>
-						<p>He tenido la suerte de participar en proyectos que incluian el desarrollo mobile tanto para
-							android e iOS, por lo que también adquirí experiencia en el diseño de interfaces móviles y
-							su implementación en react-native e ionic framework.</p>
-						<p>He trabajado para muchos clientes con renombre en el mercado nacional e internacional,
-							buscando soluciones a la medida para la visualización de contenidos, datos e información.
-						</p>
-						<p>Y claro, no todo es trabajo en la vida y en mi tiempo libre dedico tiempo a aprender muchas
-							cosas. Desde ilustración digital hasta modelado 3d, jugar algunos videojuegos y dedicar
-							tiempo a mi familia.</p>
-						<p>Los invito a ver mi portafolio.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!--Lightbox gallery js-->
 	<script src="js/filterable-gallery-lightbox/main.js"></script>
