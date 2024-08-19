@@ -148,11 +148,53 @@
 }());
 
 function openModal(){
-	var element = document.getElementById("fh5co-modal");
-	element.classList.add("modalopen");
+	$('body').toggleClass('closed-menu')
 }
 
 function closeModal(){
-	var element = document.getElementById("fh5co-modal");
-	element.classList.remove("modalopen");
+	$('body').removeClass('home')
 }
+
+function shrinkMenu(){
+	$('body').toggleClass('shrink-menu')
+}
+
+
+function aboutWindow(){
+	var aboutwindow = document.getElementById("aboutWindow");
+	var aboutbutton = document.getElementById("fh5co-header")
+	aboutwindow.classList.toggle("active");
+	aboutbutton.classList.toggle("aboutactive");
+}
+
+
+var header = document.getElementById("mainMenu");
+var btns = header.getElementsByClassName("option");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+	var current = document.getElementsByClassName("active");
+	current[0].className = current[0].className.replace(" active", "");
+	this.className += " active";
+	});
+  }
+
+  const carouselItems = document.querySelectorAll(".carousel_item"); 
+  let e = 1;
+  
+  setInterval(() => {
+  // Accessing All the carousel Items
+   Array.from(carouselItems).forEach((item,index) => {
+  
+	 if(e < carouselItems.length){
+	  item.style.transform = `translateX(-${e*100}%)`
+	 }
+	})
+  
+  
+	if(e < carouselItems.length){
+	  e++;
+	}
+	else{
+	  e=0;
+	}
+  },2000)

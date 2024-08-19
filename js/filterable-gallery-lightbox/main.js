@@ -3,11 +3,18 @@
 const body = document.body;
 const galleryTabs = document.querySelectorAll('.gallery_tabs li');
 const galleryItems = document.querySelectorAll('.gallery_item');
+const cardgalleryItems = document.querySelectorAll('.cardgallery_item');
 const galleryImgs = document.querySelectorAll('.gallery_item img');
+const cardgalleryImgs = document.querySelectorAll('.cardgallery_item img');
 const lightbox = document.querySelector('.lightbox');
+const cardlightbox = document.querySelector('.cardlightbox');
 const lightboxImg = document.querySelector('.lightbox_img');
+const cardlightboxImg = document.querySelector('.cardlightbox_img');
 const lightboxCloseBtn = document.querySelector('.lightbox_close');
+const cardlightboxCloseBtn = document.querySelector('.cardlightbox_close');
 const lightboxCaption = document.querySelector('.lightbox_caption');
+const lightboxData = document.querySelector('.lightbox_data');
+const lightboxSkills = document.querySelector('.lightbox_skills');
 
 
 /*===== 01) Gallery Filtering functionality =====*/
@@ -47,14 +54,29 @@ galleryImgs.forEach((currImg) => {
 
         let imgSrc = e.target.getAttribute('src');
         let imgCapt = e.target.getAttribute('alt');
+        let imgData = e.target.getAttribute('image-data');
+        let imgSkills = e.target.getAttribute('class');
 
         lightboxImg.setAttribute('src', imgSrc);
-
         lightboxCaption.innerHTML = (imgCapt);
+        lightboxData.innerHTML = (imgData);
+        lightboxSkills.className = (imgSkills)
 
         lightbox.classList.add('open');
         body.classList.add('overflow_hide');
 
+    });
+});
+
+cardgalleryImgs.forEach((currImg) => {
+    currImg.addEventListener('click', (e) => {
+
+        let cardimgSrc = e.target.getAttribute('src');
+
+        cardlightboxImg.setAttribute('src',cardimgSrc);
+
+        cardlightbox.classList.add('open');
+        body.classList.add('overflow_hide');
     });
 });
 
@@ -64,15 +86,21 @@ const lightboxClose = () => {
     body.classList.remove('overflow_hide');
 };
 
+const cardlightboxClose = () => {
+    cardlightbox.classList.remove('open');
+    body.classList.remove('overflow_hide');
+};
+
 
 // closing the lightbox on clicking the lightboxClose btn.
 lightboxCloseBtn.addEventListener('click', lightboxClose);
-
+cardlightboxCloseBtn.addEventListener('click', cardlightboxClose);
 
 // closing the lightbox on clicking outside of it.
 window.addEventListener('click', (e) => {
     if (e.target.className === 'lightbox_wrapper') {
         lightboxClose();
+        cardlightboxClose();
     }
 });
 
@@ -81,5 +109,6 @@ window.addEventListener('click', (e) => {
 window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         lightboxClose();
+        cardlightboxClose();
     }
 });
