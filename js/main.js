@@ -177,7 +177,7 @@ function menumobileoption(){
 
 function aboutWindow(){
 	var aboutwindow = document.getElementById("aboutWindow");
-	var aboutbutton = document.getElementById("fh5co-header")
+	var aboutbutton = document.getElementById("portfolioHome")
 	aboutwindow.classList.toggle("active");
 	aboutbutton.classList.toggle("aboutactive");
 }
