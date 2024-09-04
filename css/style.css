@@ -100,7 +100,7 @@ figure {
   background: #FF9000;
 }
 
-#fh5co-header,
+#portfolioHome,
 .fh5co-cover {
   background-color: #f7f5f5;
   background-size: cover;
@@ -120,7 +120,7 @@ figure {
   position: absolute;
 }
 
-#fh5co-header .overlay,
+#portfolioHome .overlay,
 .fh5co-cover .overlay {
   position: absolute;
   top: 0;
@@ -130,22 +130,22 @@ figure {
   background: rgba(255, 144, 0, 1);
 }
 
-#fh5co-header .display-t,
+#portfolioHome .display-t,
 .fh5co-cover .display-t {
   width: 100%;
   display: table;
 }
 
-#fh5co-header .display-tc,
+#portfolioHome .display-tc,
 .fh5co-cover .display-tc {
   display: table-cell;
   vertical-align: middle;
   height: 600px;
 }
 
-#fh5co-header .display-tc h1,
-#fh5co-header .display-tc h2,
-#fh5co-header .display-tc h3,
+#portfolioHome .display-tc h1,
+#portfolioHome .display-tc h2,
+#portfolioHome .display-tc h3,
 .fh5co-cover .display-tc h1,
 .fh5co-cover .display-tc h2,
 .fh5co-cover .display-tc h3 {
@@ -154,7 +154,7 @@ figure {
   color: white;
 }
 
-#fh5co-header .display-tc h1,
+#portfolioHome .display-tc h1,
 .fh5co-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
   margin-bottom: 30px;
@@ -163,13 +163,13 @@ figure {
   font-weight: 300;
 }
 
-#fh5co-header .display-tc h1 span,
+#portfolioHome .display-tc h1 span,
 .fh5co-cover .display-tc h1 span {
   padding: 4px 15px;
   position: relative;
 }
 
-#fh5co-header .display-tc h1 span:before,
+#portfolioHome .display-tc h1 span:before,
 .fh5co-cover .display-tc h1 span:before {
   position: absolute;
   top: 40px;
@@ -181,7 +181,7 @@ figure {
   margin-left: -30px;
 }
 
-#fh5co-header .display-tc h1 span:after,
+#portfolioHome .display-tc h1 span:after,
 .fh5co-cover .display-tc h1 span:after {
   position: absolute;
   top: 40px;
@@ -195,12 +195,12 @@ figure {
 
 @media screen and (max-width: 768px) {
 
-  #fh5co-header .display-tc h1,
+  #portfolioHome .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 34px;
   }
 
-  #fh5co-header .display-tc h1 span:before,
+  #portfolioHome .display-tc h1 span:before,
   .fh5co-cover .display-tc h1 span:before {
     top: 28px;
     width: 20px;
@@ -208,7 +208,7 @@ figure {
     margin-left: -15px;
   }
 
-  #fh5co-header .display-tc h1 span:after,
+  #portfolioHome .display-tc h1 span:after,
   .fh5co-cover .display-tc h1 span:after {
     top: 28px;
     width: 20px;
@@ -217,21 +217,21 @@ figure {
   }
 }
 
-#fh5co-header .display-tc h2,
+#portfolioHome .display-tc h2,
 .fh5co-cover .display-tc h2 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-#fh5co-header .display-tc h3,
+#portfolioHome .display-tc h3,
 .fh5co-cover .display-tc h3 {
   font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
 
-  #fh5co-header .display-tc h3,
+  #portfolioHome .display-tc h3,
   .fh5co-cover .display-tc h3 {
     font-size: 14px;
   }
@@ -241,7 +241,7 @@ figure {
   }
 }
 
-#fh5co-header .display-tc .profile-thumb,
+#portfolioHome .display-tc .profile-thumb,
 .fh5co-cover .display-tc .profile-thumb {
   background-size: cover !important;
   background-position: center center;
@@ -257,12 +257,12 @@ figure {
   border-radius: 50%;
 }
 
-#fh5co-header .display-tc .fh5co-social-icons li a,
+#portfolioHome .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
   color: #fff;
 }
 
-#fh5co-header .display-tc .fh5co-social-icons li a i,
+#portfolioHome .display-tc .fh5co-social-icons li a i,
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
 }
@@ -2606,6 +2606,57 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   text-align: center;
 }
 
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.gallery-grip img {
+  max-width: 100%;
+  display: block;
+}
+
+.gallery-grip figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grip figure>img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.gallery-grip figure a {
+  color: black;
+  text-decoration: none;
+}
+
+.gallery-grip figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, .5);
+  padding: .2em .5em;
+  justify-self: start;
+}
+
+.gallery-grip .grip-container {
+  column-count: 5;
+  column-gap: 5px;
+}
+
 .work-gallery {
   padding-left: 70px;
   padding-right: 70px;
@@ -2880,5 +2931,106 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
 
 .project-description .skills .tool.personal{
   background-color: #d467cf;
+}
+
+/*mobile menu*/
+.mobile-header{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 40px;
+  overflow: visible;
+  z-index: 20;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-button {
+  margin-left: auto;
+  width: 40px;
+  height: 39px;
+  border: none;
+  background-color: white;
+  font-size: 33px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-text-color);
+}
+
+.mobile-menu {
+  position: absolute;
+  right: -100px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  width: 100px;
+  transition: all ease .2s;
+}
+
+.mobile-menu.menu-active{
+  right: 0;
+}
+
+.mobile-menu ul{
+  margin-bottom: 0;
+}
+
+.mobile-menu li{
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1280px){
+  .gallery-grip .grip-container,
+  .section-projects{
+    column-count: 4;
+  }
+
+  .work-gallery{
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .shrink-menu .fixed-sidebar{
+    display: none;
+  }
+
+  .shrink-menu #page{
+    width: 100%;
+  }
+
+  .section-title p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gallery-grip .grip-container,
+  .section-projects{
+    column-count: 3;
+  }
+
+  .work-gallery{
+    padding-right: 10px;
+  }
+  .mobile-header{
+    display: flex;
+  }
+  .carousel-wrapper{
+    display: none;
+  }
+  .grettings-container{
+    width: 100%;
+  }
+  button.welcome-button{
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

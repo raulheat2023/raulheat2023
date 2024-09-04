@@ -159,6 +159,21 @@ function shrinkMenu(){
 	$('body').toggleClass('shrink-menu')
 }
 
+if (window.screen.width <= 970 ) {
+	$('body').toggleClass('shrink-menu')
+}
+
+var menumobilewindow = document.getElementById("mobileMenu");
+
+function menumobile(){	
+	menumobilewindow.classList.toggle("menu-active")
+}
+
+function menumobileoption(){
+	menumobilewindow.classList.toggle("menu-active")
+}
+
+
 
 function aboutWindow(){
 	var aboutwindow = document.getElementById("aboutWindow");

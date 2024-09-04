@@ -45,59 +45,6 @@
   		--main-text-color: #0099ff;
 		}
 	</style>
-	<!--Light gallery css-->
-	<style>
-		.lead {
-			font-size: 1.5rem;
-			font-weight: 300;
-		}
-
-		/* clearfix */
-		.grid:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-
-		/* ---- grid-item ---- */
-
-		.gallery-grip img {
-			max-width: 100%;
-			display: block;
-		}
-
-		.gallery-grip figure {
-			margin: 0;
-			display: grid;
-			grid-template-rows: 1fr auto;
-			margin-bottom: 10px;
-			break-inside: avoid;
-			box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
-		}
-
-		.gallery-grip figure>img {
-			grid-row: 1 / -1;
-			grid-column: 1;
-		}
-
-		.gallery-grip figure a {
-			color: black;
-			text-decoration: none;
-		}
-
-		.gallery-grip figcaption {
-			grid-row: 2;
-			grid-column: 1;
-			background-color: rgba(255, 255, 255, .5);
-			padding: .2em .5em;
-			justify-self: start;
-		}
-
-		.gallery-grip .grip-container {
-			column-count: 5;
-			column-gap: 5px;
-		}
-	</style>
 
 	<link rel="stylesheet" href="js/filterable-gallery-lightbox/style.css">
 
@@ -113,6 +60,23 @@
 </head>
 
 <body>
+	<div class="mobile-header">
+		<div class="logo"></div>
+		<button class="mobile-menu-button" id="mobileMenuButton" onclick="menumobile()"><i class="icon-menu"></i></button>
+		<div class="mobile-menu" id="mobileMenu">
+			<ul>
+				<li onclick="menumobileoption()">
+					<a href="#portfolioHome">Inicio</a>
+				</li>
+				<li onclick="menumobileoption()">
+					<a href="#portfolioWorks">Trabajos</a>
+				</li>
+				<li onclick="menumobileoption()">
+					<a href="#portfolioProjects">Proyectos</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="fixed-sidebar" id="sidebar">
 		<div class="mainmenu-container">
 			<button class="colapse-button" onclick=shrinkMenu()>
@@ -141,11 +105,11 @@
 			<div class="main-menu">
 				<ul id="mainMenu">
 					<li class="option active">
-						<a href="#fh5co-header" class="expandedoption">
+						<a href="#portfolioHome" class="expandedoption">
 							<i class="icon-home"></i>
 							<span>Inicio</span>
 						</a>
-						<a href="#fh5co-header" class="shrinkoption"><i class="icon-home"></i></a>
+						<a href="#portfolioHome" class="shrinkoption"><i class="icon-home"></i></a>
 					</li>
 					<li class="option">
 						<a href="#portfolioWorks" class="expandedoption">
@@ -175,7 +139,7 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
-		<section id="fh5co-header" class="bg-border bg-exceed">
+		<section id="portfolioHome" class="bg-border bg-exceed">
 			<button id="aboutButton" class="welcome-button" onclick=aboutWindow()>
 				<div class="icon-container">
 					<i class="icon-magic-wand"></i>
