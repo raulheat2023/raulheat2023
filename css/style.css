@@ -1919,6 +1919,7 @@ a.shrinkoption:hover {
   align-items: center;
   justify-content: center;
   transition: all ease 0.5s;
+  margin: 0 5px;
 }
 
 .mainmenu-container .social .social-button:hover {
