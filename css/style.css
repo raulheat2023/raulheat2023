@@ -2946,6 +2946,7 @@ button.welcome-button .icon-container .icon-cross2 {
   justify-content: center;
   z-index: 1;
   cursor: pointer;
+  border-radius: 10px 10px 0 0;
 }
 
 .video-icon {
@@ -3195,6 +3196,19 @@ button.welcome-button .icon-container .icon-cross2 {
 
   button.welcome-button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .gallery-grip .grip-container,
+  .section-projects {
+    column-count: 2;
+  }
+  .lightbox-video{
+    width: 100%;
+  }
+  .lightbox_content img{
+    width: 100%;
   }
 }
 

@@ -123,6 +123,7 @@ window.addEventListener('click', (e) => {
     if (e.target.className === 'lightbox_wrapper') {
         lightboxClose();
         cardlightboxClose();
+        videolightboxClose();
     }
 });
 
@@ -132,5 +133,6 @@ window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         lightboxClose();
         cardlightboxClose();
+        videolightboxClose();
     }
 });
