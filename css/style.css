@@ -2931,6 +2931,9 @@ button.welcome-button .icon-container .icon-cross2 {
 
 .project-image.cardgallery_video.video-item {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-overlay {
@@ -2955,6 +2958,7 @@ button.welcome-button .icon-container .icon-cross2 {
   border-radius: 20px;
   font-size: 27px;
   color: white;
+  position: absolute;
 }
 
 .project-item.card img,

@@ -87,7 +87,7 @@ cardgalleryImgs.forEach((currImg) => {
 galleryVideos.forEach((currVideo) => {
     currVideo.addEventListener('click', (e) => {
 
-        let videoSrc = e.target.getAttribute('data');
+        let videoSrc = e.target.getAttribute('href');
 
         lightboxVideoSrc.setAttribute('src',videoSrc);
 
