@@ -5,13 +5,17 @@ const galleryTabs = document.querySelectorAll('.gallery_tabs li');
 const galleryItems = document.querySelectorAll('.gallery_item');
 const cardgalleryItems = document.querySelectorAll('.cardgallery_item');
 const galleryImgs = document.querySelectorAll('.gallery_item img');
+const galleryVideos = document.querySelectorAll('.cardgallery_video .video-overlay');
 const cardgalleryImgs = document.querySelectorAll('.cardgallery_item img');
 const lightbox = document.querySelector('.lightbox');
 const cardlightbox = document.querySelector('.cardlightbox');
+const lightboxvideo = document.querySelector('.videolightbox');
 const lightboxImg = document.querySelector('.lightbox_img');
 const cardlightboxImg = document.querySelector('.cardlightbox_img');
+const lightboxVideoSrc = document.querySelector('.lightbox-video');
 const lightboxCloseBtn = document.querySelector('.lightbox_close');
 const cardlightboxCloseBtn = document.querySelector('.cardlightbox_close');
+const videolightboxCloseBtn = document.querySelector('.videolightbox_close');
 const lightboxCaption = document.querySelector('.lightbox_caption');
 const lightboxData = document.querySelector('.lightbox_data');
 const lightboxSkills = document.querySelector('.lightbox_skills');
@@ -80,6 +84,18 @@ cardgalleryImgs.forEach((currImg) => {
     });
 });
 
+galleryVideos.forEach((currVideo) => {
+    currVideo.addEventListener('click', (e) => {
+
+        let videoSrc = e.target.getAttribute('data');
+
+        lightboxVideoSrc.setAttribute('src',videoSrc);
+
+        lightboxvideo.classList.add('open');
+        body.classList.add('overflow_hide');
+    });
+});
+
 // Function for closing the Lightbox
 const lightboxClose = () => {
     lightbox.classList.remove('open');
@@ -91,10 +107,16 @@ const cardlightboxClose = () => {
     body.classList.remove('overflow_hide');
 };
 
+const videolightboxClose = () => {
+    lightboxvideo.classList.remove('open');
+    body.classList.remove('overflow_hide');
+};
+
 
 // closing the lightbox on clicking the lightboxClose btn.
 lightboxCloseBtn.addEventListener('click', lightboxClose);
 cardlightboxCloseBtn.addEventListener('click', cardlightboxClose);
+videolightboxCloseBtn.addEventListener('click', videolightboxClose);
 
 // closing the lightbox on clicking outside of it.
 window.addEventListener('click', (e) => {

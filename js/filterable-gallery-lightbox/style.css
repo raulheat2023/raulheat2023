@@ -134,7 +134,7 @@ ul {
 }
 
 /* Lightbox */
-.lightbox, .cardlightbox {
+.lightbox, .cardlightbox, .videolightbox {
     position: fixed;
     top: 0;
     left: 0;
@@ -151,7 +151,7 @@ ul {
 }
 
 /* when the lightbox is open */
-.lightbox.open, .cardlightbox.open {
+.lightbox.open, .cardlightbox.open, .videolightbox.open {
     pointer-events: all;
     visibility: visible;
     opacity: 1;
@@ -220,12 +220,13 @@ ul {
 
 /* when Lightbox is open then lightbox-content will... */
 .lightbox.open .lightbox_content,
-.cardlightbox.open .lightbox_content {
+.cardlightbox.open .lightbox_content,
+.videolightbox.open .lightbox_content {
     transform: scale(1);
 }
 
 /* lightbox-close-btn */
-.lightbox_close, .cardlightbox_close {
+.lightbox_close, .cardlightbox_close, .videolightbox_close {
     position: absolute;
     top: 3vh;
     right: 3vw;
@@ -239,7 +240,7 @@ ul {
     overflow: hidden;
 }
 
-.lightbox_close span, .cardlightbox_close span {
+.lightbox_close span, .cardlightbox_close span, .videolightbox_close span {
     width: 100%;
     height: 3px;
     margin-top: -1.5px;
@@ -250,17 +251,20 @@ ul {
 }
 
 .lightbox_close:hover span,
-.cardlightbox_close:hover span {
+.cardlightbox_close:hover span,
+.videolightbox_close:hover span {
     opacity: 1;
 }
 
 .lightbox_close span:first-child,
-.cardlightbox_close span:first-child {
+.cardlightbox_close span:first-child,
+.videolightbox_close span:first-child {
     transform: rotate(45deg);
 }
 
 .lightbox_close span:last-child,
-.cardlightbox_close span:last-child  {
+.cardlightbox_close span:last-child,
+.videolightbox_close span:last-child  {
     transform: rotate(-45deg);
 }
 

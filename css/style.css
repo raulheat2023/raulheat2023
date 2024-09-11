@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* =======================================================
 *
 * 	Template Style 
@@ -1928,7 +1929,7 @@ a.shrinkoption:hover {
   color: white;
 }
 
-.main-visuals{
+.main-visuals {
   display: flex;
   align-items: center;
   width: 100%;
@@ -1946,19 +1947,20 @@ a.shrinkoption:hover {
   margin: 0;
   color: var(--main-text-color);
 }
+
 .gretting-title h1,
 .gretting-title h3,
 .gretting-title p {
   padding-left: 30px;
   padding-right: 30px;
-  
+
 }
 
-.gretting-title h3{
+.gretting-title h3 {
   margin-bottom: 0;
 }
 
-.gretting-title p{
+.gretting-title p {
   line-height: 1;
 }
 
@@ -1968,7 +1970,7 @@ a.shrinkoption:hover {
   flex-wrap: wrap;
 }
 
-.skills-icons img{
+.skills-icons img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -2051,12 +2053,12 @@ button.welcome-button .icon-container .icon-cross2 {
 /*carousel*/
 .grettings-container {
   width: calc(100% - 20vw);
-    min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background: url('../images/grid-bg.webp') repeat scroll center center transparent;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: url('../images/grid-bg.webp') repeat scroll center center transparent;
 }
 
 .carousel-mask {
@@ -2077,12 +2079,12 @@ button.welcome-button .icon-container .icon-cross2 {
 
 .carousel_items {
   display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: 20vw;
-    height: 100vh;
-    max-width: 500px;
-  
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 20vw;
+  height: 100vh;
+  max-width: 500px;
+
 }
 
 .carousel_item {
@@ -2131,11 +2133,11 @@ button.welcome-button .icon-container .icon-cross2 {
   background-image: url("../images/carousel_05.webp");
 }
 
-.responsive-title{
+.responsive-title {
   min-width: 60%;
 }
 
-.responsiveslider{
+.responsiveslider {
   display: flex;
   justify-content: flex-end;
   height: 100vh;
@@ -2146,7 +2148,7 @@ button.welcome-button .icon-container .icon-cross2 {
   max-width: 40%;
 }
 
-.responsiveslider div{
+.responsiveslider div {
   flex: 0 0 5vw;
   border-radius: 0;
   transition: 0.5s ease-in-out;
@@ -2157,56 +2159,50 @@ button.welcome-button .icon-container .icon-cross2 {
 }
 
 .responsiveslider div:nth-of-type(1) {
-  background: url("../images/carousel_01.webp")
-    no-repeat 50% / cover;
+  background: url("../images/carousel_01.webp") no-repeat 50% / cover;
 }
 
 .responsiveslider div:nth-of-type(2) {
-  background: url("../images/carousel_02.webp")
-        no-repeat 50% / cover;
+  background: url("../images/carousel_02.webp") no-repeat 50% / cover;
 }
 
 .responsiveslider div:nth-of-type(3) {
-  background: url("../images/carousel_03.webp")
-        no-repeat 50% / cover;
+  background: url("../images/carousel_03.webp") no-repeat 50% / cover;
 }
 
 .responsiveslider div:nth-of-type(4) {
-  background: url("../images/carousel_06.webp")
-        no-repeat 50% / cover;
+  background: url("../images/carousel_06.webp") no-repeat 50% / cover;
 }
 
-.responsiveslider div .content{
+.responsiveslider div .content {
   font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: rgb(2, 2, 46);
-      background: linear-gradient(
-        0deg,
-        rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: rgb(2, 2, 46);
+  background: linear-gradient(0deg,
+      rgba(2, 2, 46, 0.6755077030812324) 0%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
 }
 
-.responsiveslider div .content h2{
+.responsiveslider div .content h2 {
   color: white;
   margin-bottom: 0;
   text-align: center;
 }
 
-.responsiveslider div .content span{
+.responsiveslider div .content span {
   display: block;
-        margin-top: 5px;
-        font-size: 1.2rem;
+  margin-top: 5px;
+  font-size: 1.2rem;
 }
 
 .responsiveslider div:hover {
@@ -2229,7 +2225,7 @@ button.welcome-button .icon-container .icon-cross2 {
   overflow: hidden;
 }
 
-.about-transformation.active{
+.about-transformation.active {
   z-index: 7;
 }
 
@@ -2243,7 +2239,7 @@ button.welcome-button .icon-container .icon-cross2 {
   opacity: 0;
 }
 
-.aboutactive .about-inner{
+.aboutactive .about-inner {
   animation: aboutopacity .5s ease 1 forwards;
 }
 
@@ -2258,7 +2254,7 @@ button.welcome-button .icon-container .icon-cross2 {
   opacity: 0;
 }
 
-.bg-top .qr{
+.bg-top .qr {
   position: absolute;
   height: 120px;
   width: 120px;
@@ -2275,113 +2271,114 @@ button.welcome-button .icon-container .icon-cross2 {
   flex-wrap: wrap;
 }
 
-.bg-top .tools .tool{
+.bg-top .tools .tool {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    opacity: 0;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
-.aboutactive .bg-top .tools .tool{
+.aboutactive .bg-top .tools .tool {
   animation: toolsdelay .5s ease;
   animation-fill-mode: forwards;
 }
 
 @keyframes toolsdelay {
-  0%{
+  0% {
     opacity: 0;
     margin: -10px;
   }
-  100%{
+
+  100% {
     opacity: 1;
     margin: 0;
   }
 }
 
-.bg-top .tools .tool:nth-child(1){
-animation-delay: .3s;
+.bg-top .tools .tool:nth-child(1) {
+  animation-delay: .3s;
 }
 
-.bg-top .tools .tool:nth-child(2){
+.bg-top .tools .tool:nth-child(2) {
   animation-delay: .4s;
 }
 
-.bg-top .tools .tool:nth-child(3){
+.bg-top .tools .tool:nth-child(3) {
   animation-delay: .5s;
 }
 
-.bg-top .tools .tool:nth-child(4){
+.bg-top .tools .tool:nth-child(4) {
   animation-delay: .6s;
 }
 
-.bg-top .tools .tool:nth-child(5){
+.bg-top .tools .tool:nth-child(5) {
   animation-delay: .7s;
 }
 
-.bg-top .tools .tool:nth-child(6){
+.bg-top .tools .tool:nth-child(6) {
   animation-delay: .8s;
 }
 
-.bg-top .tools .tool:nth-child(7){
+.bg-top .tools .tool:nth-child(7) {
   animation-delay: .9s;
 }
 
-.bg-top .tools .tool:nth-child(8){
+.bg-top .tools .tool:nth-child(8) {
   animation-delay: 1s;
 }
 
-.bg-top .tools .tool:nth-child(9){
+.bg-top .tools .tool:nth-child(9) {
   animation-delay: 1.1s;
 }
 
-.bg-top .tools .tool:nth-child(10){
+.bg-top .tools .tool:nth-child(10) {
   animation-delay: 1.2s;
 }
 
-.bg-top .tools .tool:nth-child(11){
+.bg-top .tools .tool:nth-child(11) {
   animation-delay: 1.3s;
 }
 
-.bg-top .tools .tool:nth-child(12){
+.bg-top .tools .tool:nth-child(12) {
   animation-delay: 1.4s;
 }
 
-.bg-top .tools .tool:nth-child(13){
+.bg-top .tools .tool:nth-child(13) {
   animation-delay: 1.5s;
 }
 
-.bg-top .tools .tool:nth-child(14){
+.bg-top .tools .tool:nth-child(14) {
   animation-delay: 1.6s;
 }
 
-.bg-top .tools .tool:nth-child(15){
+.bg-top .tools .tool:nth-child(15) {
   animation-delay: 1.7s;
 }
 
-.bg-top .tools .tool:nth-child(16){
+.bg-top .tools .tool:nth-child(16) {
   animation-delay: 1.8s;
 }
 
-.bg-top .tools .tool img{
+.bg-top .tools .tool img {
   width: 30px;
   height: 30px;
 }
 
 .aboutactive .about-text h4 {
   font-size: 5.5em;
-    color: white;
-    font-weight: 600;
-    margin: 0;
+  color: white;
+  font-weight: 600;
+  margin: 0;
 }
 
-.cliptextcontainer{
+.cliptextcontainer {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -2389,7 +2386,7 @@ animation-delay: .3s;
   max-width: 800px;
 }
 
-.cliptext{
+.cliptext {
   font-size: 8rem;
   font-weight: 800;
   text-align: left;
@@ -2408,18 +2405,19 @@ animation-delay: .3s;
   color: white;
   line-height: 1;
   margin-left: -6px;
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   .cliptextcontainer .cliptext2 {
-      color: transparent;
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-image: url(https://wallpapersmug.com/download/1366x768/13377a/cyberpunk-city-buildings-art.jpg);
-      background-size: cover;
-      background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://wallpapersmug.com/download/1366x768/13377a/cyberpunk-city-buildings-art.jpg);
+    background-size: cover;
+    background-position: center;
   }
+
   .bg-middle .clipped-nickname-container .clipped-nickname {
     color: transparent;
     background-clip: text;
@@ -2428,33 +2426,37 @@ animation-delay: .3s;
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    animation: clipedbganimation  60s ease infinite;
+    animation: clipedbganimation 60s ease infinite;
     animation-direction: normal;
     animation-timing-function: linear;
-   }
+  }
 }
 
 @keyframes shadowmovement {
-  0%{
+  0% {
     margin: 0;
   }
-  50%{
+
+  50% {
     margin-left: -6px;
     margin-top: -5px;
   }
-  100%{
+
+  100% {
     margin: 0;
   }
 }
 
 @keyframes clipedbganimation {
-  0%{
+  0% {
     background-position-x: 0;
   }
-  50%{
+
+  50% {
     background-position-x: 100px;
   }
-  100%{
+
+  100% {
     background-position-x: 0;
   }
 }
@@ -2468,13 +2470,13 @@ animation-delay: .3s;
   opacity: 0;
 }
 
-.aboutactive  .bg-middle{
+.aboutactive .bg-middle {
   animation: middleopacity .3s ease;
   animation-delay: .6s;
   animation-fill-mode: forwards;
 }
 
-.bg-middle .clipped-nickname-container{
+.bg-middle .clipped-nickname-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2488,20 +2490,21 @@ animation-delay: .3s;
 }
 
 @keyframes middleopacity {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
 
 .aboutactive .about-text p {
   font-size: 18px;
-    color: white;
-    font-weight: lighter;
-    margin: 0;
-    letter-spacing: 9px;
+  color: white;
+  font-weight: lighter;
+  margin: 0;
+  letter-spacing: 9px;
 }
 
 .aboutactive .about-text {
@@ -2514,15 +2517,15 @@ animation-delay: .3s;
   padding-left: 40px;
 }
 
-.aboutactive .bg-bottom .bg{
+.aboutactive .bg-bottom .bg {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
+  background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   width: 100%;
   height: 100vh;
 }
 
-.aboutactive .bg-bottom{
+.aboutactive .bg-bottom {
   -webkit-mask-image: url("../images/halftone-gradient.png");
   mask-image: url('../images/halftone-gradient.png');
   -webkit-mask-repeat: no-repeat;
@@ -2541,25 +2544,28 @@ animation-delay: .3s;
 }
 
 @keyframes aboutopacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .about-inner .circle {
@@ -2574,8 +2580,8 @@ animation-delay: .3s;
   transform-origin: bottom right;
 }
 
-.about-transformation.active .about-inner .circle{
-background: url("../images/grid-bg-transparence.webp") repeat fixed center center #1b1b1b;
+.about-transformation.active .about-inner .circle {
+  background: url("../images/grid-bg-transparence.webp") repeat fixed center center #1b1b1b;
 }
 
 .about-transformation.active .about-inner .circle {
@@ -2602,52 +2608,53 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   background-position-y: bottom;
 }
 
-.about-inner .dangerline{
+.about-inner .dangerline {
   position: absolute;
-    bottom: 50px;
-    width: calc(100% + 100px);
-    height: 30px;
-    background: url(../images/design.webp) repeat-x scroll center center #000;
-    z-index: 12;
-    left: 0;
-    transform: rotate(-10.2deg) translateX(10px);
-    animation: textrotation 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  bottom: 50px;
+  width: calc(100% + 100px);
+  height: 30px;
+  background: url(../images/design.webp) repeat-x scroll center center #000;
+  z-index: 12;
+  left: 0;
+  transform: rotate(-10.2deg) translateX(10px);
+  animation: textrotation 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes textrotation {
-  0%{
+  0% {
     background-position-x: 0;
   }
-  
-  100%{
+
+  100% {
     background-position-x: 200px;
   }
 }
 
-.about-inner .character{
+.about-inner .character {
   position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 11;
-    background: url(../images/raulheat.webp) no-repeat scroll center top transparent;
-    bottom: 0;
-    right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 11;
+  background: url(../images/raulheat.webp) no-repeat scroll center top transparent;
+  bottom: 0;
+  right: 0;
 }
 
-.aboutactive .about-inner .character{
+.aboutactive .about-inner .character {
   animation: character 1s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
 }
 
 @keyframes character {
-  0%{
+  0% {
     opacity: 0;
     margin-right: -100px;
   }
-  100%{
+
+  100% {
     opacity: 1;
     margin-right: 0;
   }
@@ -2797,7 +2804,7 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
 }
 
 /*skills*/
-.lighbox_skill_container{}
+.lighbox_skill_container {}
 
 .lighbox_skill_container .skills {
   display: flex;
@@ -2805,7 +2812,7 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   flex-wrap: wrap;
 }
 
-.lighbox_skill_container span{
+.lighbox_skill_container span {
   display: none;
   padding: 0 10px;
   border-radius: 20px;
@@ -2816,91 +2823,91 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   margin-bottom: 5px;
 }
 
-.lighbox_skill_container .figma .skill-figma{
+.lighbox_skill_container .figma .skill-figma {
   display: block;
   background-color: #23a6d5;
 }
 
-.lighbox_skill_container .angular .skill-angular{
+.lighbox_skill_container .angular .skill-angular {
   display: block;
   background-color: #7c2626;
 }
 
-.lighbox_skill_container .photoshop .skill-photoshop{
+.lighbox_skill_container .photoshop .skill-photoshop {
   display: block;
   background-color: #2e3eca;
 }
 
-.lighbox_skill_container .illustrator .skill-illustrator{
+.lighbox_skill_container .illustrator .skill-illustrator {
   display: block;
   background-color: #da7624;
 }
 
-.lighbox_skill_container .angular .skill-kendo{
+.lighbox_skill_container .angular .skill-kendo {
   display: block;
   background-color: #29c029;
 }
 
-.lighbox_skill_container .material .skill-material{
+.lighbox_skill_container .material .skill-material {
   display: block;
   background-color: #2a5097;
 }
 
-.lighbox_skill_container .css .skill-css{
+.lighbox_skill_container .css .skill-css {
   display: block;
   background-color: #5e53ff;
 }
 
-.lighbox_skill_container .scss .skill-scss{
+.lighbox_skill_container .scss .skill-scss {
   display: block;
   background-color: #e913c5;
 }
 
-.lighbox_skill_container .typescript .skill-typescript{
+.lighbox_skill_container .typescript .skill-typescript {
   display: block;
   background-color: #3560ee;
 }
 
-.lighbox_skill_container .html .skill-html{
+.lighbox_skill_container .html .skill-html {
   display: block;
   background-color: #fa7b05;
 }
 
-.lighbox_skill_container .js .skill-js{
+.lighbox_skill_container .js .skill-js {
   display: block;
   background-color: #ffe603;
   color: #000;
 }
 
 
-.lighbox_skill_container .aftereffects .skill-aftereffects{
+.lighbox_skill_container .aftereffects .skill-aftereffects {
   display: block;
   background-color: #6d01c5;
 }
 
-.lighbox_skill_container .adobexd .skill-adobexd{
+.lighbox_skill_container .adobexd .skill-adobexd {
   display: block;
   background-color: #6a086d;
 }
 
-.lighbox_skill_container .ionic .skill-ionic{
+.lighbox_skill_container .ionic .skill-ionic {
   display: block;
   background-color: #038eff;
 }
 
 
-.lighbox_skill_container .reactnative .skill-reactnative{
+.lighbox_skill_container .reactnative .skill-reactnative {
   display: block;
   background-color: #03d9ff;
 }
 
-.lighbox_skill_container .pug .skill-pug{
+.lighbox_skill_container .pug .skill-pug {
   display: block;
   background-color: #ffd95c;
   color: #000;
 }
 
-.lighbox_skill_container .git .skill-git{
+.lighbox_skill_container .git .skill-git {
   display: block;
   background-color: #e45327;
 }
@@ -2911,7 +2918,8 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   margin: 10px;
 }
 
-.project-item.card {
+.project-item.card,
+.project-item-video.card {
   background: white;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -2921,9 +2929,39 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.project-item.card img{
+.project-image.cardgallery_video.video-item {
+  position: relative;
+}
+
+.video-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.video-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 27px;
+  color: white;
+}
+
+.project-item.card img,
+.project-item-video.card img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+  cursor: pointer;
 }
 
 .section-projects .project-title {
@@ -2933,23 +2971,23 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   line-height: 1;
 }
 
-.project-description{
+.project-description {
   padding: 0 10px 10px;
 }
 
-.project-description p{
+.project-description p {
   line-height: 1;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.project-description .skills{
+.project-description .skills {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
 
-.project-description .skills .tool{
+.project-description .skills .tool {
   background-color: #ccc;
   padding: 0 10px;
   border-radius: 20px;
@@ -2959,95 +2997,95 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   color: white;
 }
 
-.project-description .skills .tool.figma{
+.project-description .skills .tool.figma {
   background-color: #23a6d5;
 }
 
-.project-description .skills .tool.angular{
+.project-description .skills .tool.angular {
   background-color: #7c2626;
 }
 
-.project-description .skills .tool.photoshop{
+.project-description .skills .tool.photoshop {
   background-color: #2e3eca;
 }
 
-.project-description .skills .tool.illustrator{
+.project-description .skills .tool.illustrator {
   background-color: #da7624;
 }
 
-.project-description .skills .tool.kendo{
+.project-description .skills .tool.kendo {
   background-color: #29c029;
 }
 
-.project-description .skills .tool.material{
+.project-description .skills .tool.material {
   background-color: #2a5097;
 }
 
-.project-description .skills .tool.css{
+.project-description .skills .tool.css {
   background-color: #5e53ff;
 }
 
-.project-description .skills .tool.scss{
+.project-description .skills .tool.scss {
   background-color: #e913c5;
 }
 
-.project-description .skills .tool.typescript{
+.project-description .skills .tool.typescript {
   background-color: #3560ee;
 }
 
-.project-description .skills .tool.html{
+.project-description .skills .tool.html {
   background-color: #fa7b05;
 }
 
-.project-description .skills .tool.js{
+.project-description .skills .tool.js {
   background-color: #ffe603;
   color: #000;
 }
 
-.project-description .skills .tool.aftereffects{
+.project-description .skills .tool.aftereffects {
   background-color: #6d01c5;
 }
 
-.project-description .skills .tool.adobexd{
+.project-description .skills .tool.adobexd {
   background-color: #6a086d;
 }
 
-.project-description .skills .tool.ionic{
+.project-description .skills .tool.ionic {
   background-color: #038eff;
 }
 
 
-.project-description .skills .tool.reactnative{
+.project-description .skills .tool.reactnative {
   background-color: #03d9ff;
 }
 
-.project-description .skills .tool.pug{
+.project-description .skills .tool.pug {
   background-color: #ffd95c;
   color: #000;
 }
 
-.project-description .skills .tool.git{
+.project-description .skills .tool.git {
   background-color: #e45327;
 }
 
-.project-description .skills .tool.freelance{
+.project-description .skills .tool.freelance {
   background-color: #d6484f;
 }
 
-.project-description .skills .tool.medibang{
+.project-description .skills .tool.medibang {
   background-color: #4dd648;
 }
 
-.project-description .skills .tool.ilustration{
+.project-description .skills .tool.ilustration {
   background-color: #7096e7;
 }
 
-.project-description .skills .tool.personal{
+.project-description .skills .tool.personal {
   background-color: #d467cf;
 }
 
 /*mobile menu*/
-.mobile-header{
+.mobile-header {
   position: fixed;
   display: none;
   width: 100%;
@@ -3082,15 +3120,15 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
   transition: all ease .2s;
 }
 
-.mobile-menu.menu-active{
+.mobile-menu.menu-active {
   right: 0;
 }
 
-.mobile-menu ul{
+.mobile-menu ul {
   margin-bottom: 0;
 }
 
-.mobile-menu li{
+.mobile-menu li {
   border-bottom: 1px solid #ccc;
   padding-left: 10px;
   padding-right: 10px;
@@ -3100,54 +3138,60 @@ background: url("../images/grid-bg-transparence.webp") repeat fixed center cente
 }
 
 /*Media queries*/
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
+
   .gallery-grip .grip-container,
-  .section-projects{
+  .section-projects {
     column-count: 4;
   }
 
-  .work-gallery{
+  .work-gallery {
     padding-right: 20px;
   }
 }
 
-@media screen and (max-width: 768px){
-  .shrink-menu .fixed-sidebar{
+@media screen and (max-width: 768px) {
+  .shrink-menu .fixed-sidebar {
     display: none;
   }
 
-  .responsiveslider{
+  .responsiveslider {
     display: none;
   }
 
-  .shrink-menu #page{
+  .shrink-menu #page {
     width: 100%;
   }
 
-  .section-title p{
+  .section-title p {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .gallery-grip .grip-container,
-  .section-projects{
+  .section-projects {
     column-count: 3;
   }
 
-  .work-gallery{
+  .work-gallery {
     padding-right: 10px;
   }
-  .mobile-header{
+
+  .mobile-header {
     display: flex;
   }
-  .carousel-wrapper{
+
+  .carousel-wrapper {
     display: none;
   }
-  .grettings-container{
+
+  .grettings-container {
     width: 100%;
   }
-  button.welcome-button{
+
+  button.welcome-button {
     display: none;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

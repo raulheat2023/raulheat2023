@@ -41,8 +41,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<style>
-		:root{
-  		--main-text-color: #0099ff;
+		:root {
+			--main-text-color: #0099ff;
 		}
 	</style>
 
@@ -55,14 +55,14 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
-
 </head>
 
 <body>
+	<!--header mobile-->
 	<div class="mobile-header">
 		<div class="logo"></div>
-		<button class="mobile-menu-button" id="mobileMenuButton" onclick="menumobile()"><i class="icon-menu"></i></button>
+		<button class="mobile-menu-button" id="mobileMenuButton" onclick="menumobile()"><i
+				class="icon-menu"></i></button>
 		<div class="mobile-menu" id="mobileMenu">
 			<ul>
 				<li onclick="menumobileoption()">
@@ -77,6 +77,7 @@
 			</ul>
 		</div>
 	</div>
+	<!--fixed sidebar-->
 	<div class="fixed-sidebar" id="sidebar">
 		<div class="mainmenu-container">
 			<button class="colapse-button" onclick=shrinkMenu()>
@@ -132,17 +133,17 @@
 					class="social-button">
 					<i ref="linkedin" class="icon-linkedin2"></i>
 				</a>
-				<a href="doc/raultorres-cv.pdf" target="_new"
-					class="social-button">
+				<a href="doc/raultorres-cv.pdf" target="_new" class="social-button">
 					<i ref="linkedin" class="icon-text-document"></i>
 				</a>
 			</div>
 		</div>
 	</div>
-
+	<!--loader-->
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
+		<!--Portfolio home-->
 		<section id="portfolioHome" class="bg-border bg-exceed">
 			<button id="aboutButton" class="welcome-button" onclick=aboutWindow()>
 				<div class="icon-container">
@@ -233,7 +234,8 @@
 					<div class="gretting-title">
 						<h1>Raúl Torres Torres</h1>
 						<h3>Diseñador gráfico / web - mobile</h3>
-						<p>Bienvenidos a mi portafolio. Aquí publico mis trabajos relacionados a mis empleos y también proyectos personales destacables.</p>
+						<p>Bienvenidos a mi portafolio. Aquí publico mis trabajos relacionados a mis empleos y también
+							proyectos personales destacables.</p>
 					</div>
 					<div class="skills-icons">
 						<img src="images/icon-photoshop.webp" alt="photoshop">
@@ -257,28 +259,28 @@
 				<div class="responsiveslider">
 					<div>
 						<div class="content">
-						  <h2>Kaldera Web</h2>
-						  <span>Diseño web</span>
+							<h2>Kaldera Web</h2>
+							<span>Diseño web</span>
 						</div>
-					  </div>
-					  <div>
+					</div>
+					<div>
 						<div class="content">
-						  <h2>AES Web Platform</h2>
-						  <span>Diseño web</span>
+							<h2>AES Web Platform</h2>
+							<span>Diseño web</span>
 						</div>
-					  </div>
-					  <div>
+					</div>
+					<div>
 						<div class="content">
-						  <h2>Canal Mobile 3</h2>
-						  <span>Implementación app</span>
+							<h2>Canal Mobile 3</h2>
+							<span>Implementación app</span>
 						</div>
-					  </div>
-					  <div>
+					</div>
+					<div>
 						<div class="content">
-						  <h2>Ilustración</h2>
-						  <span>Ilustración digital</span>
+							<h2>Ilustración</h2>
+							<span>Ilustración digital</span>
 						</div>
-					  </div>
+					</div>
 				</div>
 			</div>
 			<div class="carousel-wrapper" style="display: none;">
@@ -300,7 +302,7 @@
 			</div>
 
 		</section>
-
+		<!--Portfolio works-->
 		<section id="portfolioWorks" class="fh5co-bg-color">
 			<div class="works-container">
 				<div class="works-item">
@@ -489,8 +491,7 @@
 				</div>
 			</div>
 		</section>
-
-
+		<!--Portfolio Projects-->
 		<section id="portfolioProjects" class="fh5co-bg-color">
 			<div class="works-container">
 				<div class="section-title">
@@ -535,8 +536,9 @@
 						</div>
 						<div class="project-title">DCVUIP</div>
 						<div class="project-description">
-							<p>Proyecto personal de UI. <a href="https://raulheat2023.github.io/DCVUIP/" target="_blank">Ver más</a></p>
-							
+							<p>Proyecto personal de UI. <a href="https://raulheat2023.github.io/DCVUIP/"
+									target="_blank">Ver más</a></p>
+
 							<div class="skills">
 								<div class="tool html">html</div>
 								<div class="tool css">css</div>
@@ -553,7 +555,7 @@
 						<div class="project-title">Poison Fanart</div>
 						<div class="project-description">
 							<p>Ilustración digital.</p>
-							
+
 							<div class="skills">
 								<div class="tool medibang">medibang</div>
 								<div class="tool photoshop">photoshop</div>
@@ -569,7 +571,7 @@
 						<div class="project-title">S4 Fanart</div>
 						<div class="project-description">
 							<p>Ilustración digital.</p>
-							
+
 							<div class="skills">
 								<div class="tool photoshop">photoshop</div>
 								<div class="tool ilustration">ilustracion</div>
@@ -583,7 +585,7 @@
 						</div>
 						<div class="project-title">Planetajuegos</div>
 						<div class="project-description">
-							<p>Diseño de soportes web y redes sociales de Planetajeugos.</p>
+							<p>Diseño de soportes web y redes sociales de Planetajuegos.</p>
 							<div class="skills">
 								<div class="tool photoshop">photoshop</div>
 								<div class="tool illustrator">illustrator</div>
@@ -591,10 +593,26 @@
 							</div>
 						</div>
 					</div>
+					<div class="project-item-video card video" style="display: none;">
+						<div class="project-image cardgallery_video video-item">
+							<div class="video-overlay" data="video/fenix_white.mp4">
+								<div class="video-icon">
+									<i class="icon-controller-play"></i>
+								</div>
+							</div>
+							<img src="images/min_projects07.webp" alt="projects01">
+						</div>
+						<div class="project-title">Logo animado logo de Kaldera</div>
+						<div class="project-description">
+							<p>Efecto de fuego realizado con after effects.</p>
+							<div class="skills">
+								<div class="tool aftereffects">after effects</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		
 		<!-- Lightbox -->
 		<div class="lightbox">
 			<div class="lightbox_wrapper">
@@ -650,18 +668,23 @@
 				<span></span>
 			</div>
 		</div>
-	</div>
-</section>
-</div>
-	</div>
-	</div>
-
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p></p>
+		<!-- Video Lightbox -->
+		<div class="videolightbox">
+			<div class="lightbox_wrapper">
+				<div class="lightbox_content">
+					<div class="video-container">
+						<video width="400" controls>
+							<source class="lightbox-video" src="" type="video/mp4">
+							Your browser does not support HTML video.
+						  </video>
+						  
+					</div>
+					
 				</div>
+			</div>
+			<div class="videolightbox_close">
+				<span></span>
+				<span></span>
 			</div>
 		</div>
 	</div>
