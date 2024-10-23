@@ -16,9 +16,14 @@ const lightboxVideoSrc = document.querySelector('.lightbox-video');
 const lightboxCloseBtn = document.querySelector('.lightbox_close');
 const cardlightboxCloseBtn = document.querySelector('.cardlightbox_close');
 const videolightboxCloseBtn = document.querySelector('.videolightbox_close');
+const flipbooklightboxCloseBtn = document.querySelector('.lightboxflipbook_close')
 const lightboxCaption = document.querySelector('.lightbox_caption');
 const lightboxData = document.querySelector('.lightbox_data');
 const lightboxSkills = document.querySelector('.lightbox_skills');
+
+const lightboxflipbook = document.querySelector('.lightboxflipbook')
+const openFlipbook = document.querySelector('.flipbookbutton')
+const flipbooklightbox_close = document.querySelector('.lightboxflipbook');
 
 
 /*===== 01) Gallery Filtering functionality =====*/
@@ -96,6 +101,11 @@ galleryVideos.forEach((currVideo) => {
     });
 });
 
+openFlipbook.addEventListener('click', (e) => {   
+    lightboxflipbook.classList.add('open');
+    body.classList.add('overflow_hide');
+});
+
 // Function for closing the Lightbox
 const lightboxClose = () => {
     lightbox.classList.remove('open');
@@ -108,7 +118,12 @@ const cardlightboxClose = () => {
 };
 
 const videolightboxClose = () => {
-    lightboxvideo.classList.remove('open');
+    lightboxflipbook.classList.remove('open');
+    body.classList.remove('overflow_hide');
+};
+
+const flipbooklightboxClose = () => {
+    flipbooklightbox_close.classList.remove('open');
     body.classList.remove('overflow_hide');
 };
 
@@ -117,6 +132,7 @@ const videolightboxClose = () => {
 lightboxCloseBtn.addEventListener('click', lightboxClose);
 cardlightboxCloseBtn.addEventListener('click', cardlightboxClose);
 videolightboxCloseBtn.addEventListener('click', videolightboxClose);
+flipbooklightboxCloseBtn.addEventListener('click', flipbooklightboxClose);
 
 // closing the lightbox on clicking outside of it.
 window.addEventListener('click', (e) => {
@@ -124,6 +140,7 @@ window.addEventListener('click', (e) => {
         lightboxClose();
         cardlightboxClose();
         videolightboxClose();
+        flipbooklightboxClose();
     }
 });
 
@@ -134,5 +151,6 @@ window.addEventListener('keydown', (e) => {
         lightboxClose();
         cardlightboxClose();
         videolightboxClose();
+        flipbooklightboxClose();
     }
 });

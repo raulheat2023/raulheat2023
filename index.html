@@ -37,6 +37,9 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
+	<!-- Flipbook style  -->
+	<link rel="stylesheet" href="css/flipbook.css">
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -133,7 +136,8 @@
 					class="social-button">
 					<i ref="linkedin" class="icon-linkedin2"></i>
 				</a>
-				<a href="doc/raultorres-cv.pdf" target="_new" class="social-button">
+
+				<a class="social-button flipbookbutton">
 					<i ref="linkedin" class="icon-text-document"></i>
 				</a>
 			</div>
@@ -548,7 +552,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-item card">
+					<!--<div class="project-item card">
 						<div class="project-image cardgallery_item">
 							<img src="images/min_projects04.webp" alt="projects01">
 						</div>
@@ -563,7 +567,7 @@
 								<div class="tool personal">personal</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="project-item card">
 						<div class="project-image cardgallery_item">
 							<img src="images/min_projects05.webp" alt="projects01">
@@ -682,6 +686,28 @@
 				<span></span>
 			</div>
 		</div>
+		<!-- Flipbook Lightbox -->
+		<div class="lightboxflipbook">
+			<div class="lightbox_wrapper">
+				<div class="flipbook-container">
+					<div class="sample-flipbook ">
+						<div id="flipbook">
+							<div class="page" style="background-image:url('images/flipbook-pages/01.jpg');"> </div>
+							<div class="page" style="background-image:url(images/flipbook-pages/02.jpg);"></div>
+						</div>
+					</div>
+					<div class="flipbooktoolbar">
+						<a href="doc/raultorres-cv.pdf" target="_new" class="social-button">
+							<i ref="download" class="icon-download4"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="lightboxflipbook_close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 	</div>
 
 	<div class="gototop js-top">
@@ -700,6 +726,14 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/turn.js"></script>
+	<script>
+		$("#flipbook").turn({
+			width: 900,
+			height: 580,
+			autoCenter: true
+		});
+	</script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
