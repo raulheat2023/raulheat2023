@@ -23,8 +23,6 @@
 }
 
 .sample-flipbook{
-	width:752px;
-	height:576px;
 	-webkit-transition:margin-left 0.2s;
 	-moz-transition:margin-left 0.2s;
 	-ms-transition:margin-left 0.2s;
