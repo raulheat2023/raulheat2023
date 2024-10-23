@@ -118,8 +118,8 @@ const cardlightboxClose = () => {
 };
 
 const videolightboxClose = () => {
-    lightboxflipbook.classList.remove('open');
     body.classList.remove('overflow_hide');
+    lightboxvideo.classList.remove('open');
 };
 
 const flipbooklightboxClose = () => {
